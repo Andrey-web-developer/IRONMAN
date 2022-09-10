@@ -1,0 +1,280 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1399.98px) {
+  .production__img {
+    transform: translate(0px, -85px);
+  }
+
+  .production__text::after {
+    right: -35%;
+  }
+
+  .about__text,
+  .contract-production__title {
+    font-size: 26px;
+  }
+
+  .about__desc,
+  .about-advantage__text {
+    font-size: 17px;
+  }
+
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1199.98px) {
+  .production__text::after {
+    right: -70%;
+    top: -32px;
+  }
+
+  .production__link {
+    font-size: 20px;
+  }
+
+  .about__text,
+  .contract-production__title,
+  .specificity__title {
+    font-size: 22px;
+  }
+
+  .contract-production__text {
+    font-size: 90px;
+  }
+
+}
+
+/* md <= Large (lg) */
+@media (max-width : 991.98px) {
+
+  .production__title,
+  .iron-quality__title {
+    font-size: 58px;
+  }
+
+  .iron-quality,
+  .specificity {
+    padding-top: 50px;
+  }
+
+  .play-video svg {
+    width: 250px;
+  }
+
+  .production__img {
+    transform: translate(0px, -20px);
+  }
+
+  .production__text {
+    font-size: 28px;
+  }
+
+  .production__text::after {
+    top: -63px;
+  }
+
+  .about__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .about__inner {
+    margin-bottom: 20px;
+  }
+
+  .about__desc:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .about-advantage__text {
+    font-size: 15px;
+  }
+
+  .contract-production__text {
+    font-size: 66px;
+  }
+
+  .container-pos::after {
+    left: 20px;
+    bottom: -200px;
+    background-size: 350px;
+  }
+
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 767.98px) {
+  .production {
+    padding-top: 20px;
+    background-image: url(../images/production/production-bg2.jpg);
+  }
+
+  .production__title {
+    text-align: center;
+  }
+
+  .production__wrapper {
+    padding-bottom: 50px;
+  }
+
+  .play-video svg {
+    width: 100%;
+  }
+
+  .production__img {
+    display: none;
+  }
+
+  .production__inner {
+    margin-bottom: 50px;
+  }
+
+  .production__text {
+    text-align: center;
+  }
+
+  .production__text::after {
+    display: none;
+  }
+
+  .production__link {
+    font-size: 23px;
+  }
+
+  .iron-quality__list--border {
+    border: none;
+  }
+
+  .iron-quality__item:not(:last-child) {
+    border-right: none;
+  }
+
+  .iron-quality__item:nth-child(2n+1) {
+    border-right: 1px solid var(--color-grey);
+  }
+
+  .iron-quality__item {
+    border-bottom: 1px solid var(--color-grey);
+  }
+
+  .iron-quality__item--border {
+    border-bottom: none;
+  }
+
+  .about {
+    padding-bottom: 50px;
+  }
+
+  .about-advantage__item--img3 {
+    margin-top: 30px;
+  }
+
+  .contract-production__text {
+    font-size: 34px;
+  }
+
+  .contract-production__inner {
+    top: -70px;
+  }
+
+  .container-pos::after {
+    left: -30px;
+    bottom: -173px;
+    background-size: 250px;
+  }
+
+  .specificity__title {
+    font-size: 19px;
+  }
+
+  .specificity__inner {
+    padding-bottom: 50px;
+  }
+
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 575.98px) {
+
+  .iron-quality,
+  .about,
+  .contract-production,
+  .specificity {
+    padding-top: 30px;
+  }
+
+  .about,
+  .specificity__inner {
+    padding-bottom: 30px;
+  }
+
+  .production__title,
+  .iron-quality__title {
+    font-size: 39px;
+  }
+
+  .iron-quality__title {
+    margin-bottom: 20px;
+  }
+
+  .production__link {
+    font-size: 20px;
+  }
+
+  .iron-quality__list--border {
+    border-bottom: none;
+  }
+
+  .iron-quality__item:nth-child(2n+1) {
+    border-right: none;
+  }
+
+  .iron-quality__item--border-top {
+    border-top: 1px solid var(--color-grey);
+  }
+
+  .iron-quality__item--border {
+    border-bottom: 1px solid var(--color-grey);
+  }
+
+  .about-advantage__item:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .contract-production__inner {
+    position: static;
+  }
+
+  .contract-production__turboslim {
+    transform: none;
+  }
+
+  .container-pos::after {
+    display: none;
+  }
+
+  .contract-production {
+    margin-bottom: 0px;
+    background-position: 105px 0px;
+  }
+
+  .specificity__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .specificity__title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .specificity__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specificity__item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+}
