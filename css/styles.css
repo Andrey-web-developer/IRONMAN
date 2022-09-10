@@ -412,3 +412,272 @@ body {
 }
 
 /* -- PRODUCTION-END --*/
+
+/* -- RULES-START -- */
+.rules {
+  margin-bottom: 50px;
+  padding-top: 35px;
+}
+
+.rules__title {
+  margin: 0;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.rules__title span {
+  color: var(--color-blue);
+}
+
+.rules__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--color-accent);
+}
+
+.rules__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.rules__text--bold {
+  font-weight: 700;
+}
+
+.tab-rules {
+  margin-bottom: 200px;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid var(--color-blue);
+}
+
+.tab__wrapper {
+  margin-bottom: 30px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-tabs .nav-link {
+  position: relative;
+  margin-bottom: 0;
+  padding: 0 5px 10px 5px;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  color: var(--color-grey);
+  transition: color 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  position: relative;
+}
+
+.nav-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1.5px;
+  width: 100%;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.nav-tabs .nav-link:hover {
+  color: var(--color-blue);
+}
+
+.tab__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.tab__title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 6.5px;
+  width: 100%;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.tab__title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #F9A01F;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0px 0px 16px #F9A01F;
+  transition: transform 2s ease-in-out;
+}
+
+.tab__title:hover:after {
+  transform: translateX(500px);
+}
+
+.tab__text,
+.tab-sublist__item {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--color-accent);
+}
+
+.tab__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.tab__text span {
+  font-weight: 700;
+}
+
+.tab__text.tab__text--mb0 {
+  margin-bottom: 0;
+}
+
+.tab__link {
+  color: var(--color-blue);
+  transition: color 0.3s ease;
+}
+
+.tab__link:hover {
+  color: var(--color-accent);
+}
+
+.tab__title--number {
+  font-family: 'Bebas Neue Pro';
+  font-size: 66px;
+  line-height: 1;
+  color: var(--color-blue);
+}
+
+.tab__title.tab__title--number {
+  padding-bottom: 0;
+}
+
+.tab__title.tab__title--number::before {
+  left: 50px;
+  bottom: 22px;
+  width: 92%;
+}
+
+.tab__title.tab__title--number::after {
+  left: 50px;
+  bottom: 15px;
+}
+
+.discounts__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.discounts__wrapper,
+.discounts__inner {
+  margin-bottom: 20px;
+}
+
+.discounts-list {
+  margin-bottom: 30px;
+}
+
+.discounts-list__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--color-accent);
+}
+
+.discounts-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.discounts-list__item:last-child {
+  position: relative;
+  padding-left: 35px;
+}
+
+.discounts-list__item:last-child::before {
+  content: url(../images/delivery/points.svg);
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+}
+
+.discounts-list__item span {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--color-grey);
+  border-radius: 10px;
+}
+
+.discounts-list__item--1 {
+  padding-top: 10px;
+}
+
+.discounts-list__item--2 {
+  padding-top: 30px;
+}
+
+.discounts-list__item--3 {
+  padding-top: 60px;
+}
+
+.discounts-list__item span.discounts-list__item--4 {
+  padding-top: 140px;
+  background-color: var(--color-blue);
+}
+
+.tab__text.tab__text--pay {
+  margin-bottom: 0;
+}
+
+.tab-list {
+  margin-bottom: 30px;
+}
+
+.tab-sublist__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.tab-sublist__text {
+  margin: 0;
+}
+
+/* -- RULES-END -- */

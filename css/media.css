@@ -20,6 +20,24 @@
     font-size: 17px;
   }
 
+  .rules__title {
+    font-size: 60px;
+  }
+
+  .tab__title,
+  .tab__text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .discounts-list li span {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .discounts-list__item {
+    font-size: 16px;
+  }
+
 }
 
 /* lg <= Extra large (xl) */
@@ -41,6 +59,24 @@
 
   .contract-production__text {
     font-size: 90px;
+  }
+
+  .rules__title {
+    font-size: 50px;
+  }
+
+  .rules__text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .nav-tabs .nav-link,
+  .tab__title,
+  .discounts__title {
+    font-size: 25px;
+  }
+
+  .tab__title--number {
+    font-size: 66px;
   }
 
 }
@@ -78,10 +114,6 @@
     margin-bottom: 50px;
   }
 
-  .about__inner {
-    margin-bottom: 20px;
-  }
-
   .about__desc:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -98,6 +130,27 @@
     left: 20px;
     bottom: -200px;
     background-size: 350px;
+  }
+
+  .about__inner,
+  .rules__title,
+  .tab__title,
+  .tab-sublist__title,
+  .tab__text:not(:last-child),
+  .discounts__title {
+    margin-bottom: 20px;
+  }
+
+  .rules__title {
+    font-size: 35px;
+  }
+
+  .tab__inner {
+    margin-bottom: 30px;
+  }
+
+  .tab-list div>li:last-child {
+    margin-top: 20px;
   }
 
 }
@@ -191,6 +244,32 @@
     padding-bottom: 50px;
   }
 
+  .rules__title {
+    font-size: 28px;
+  }
+
+  .rules__text,
+  .tab__text,
+  .tab-sublist__item {
+    font-size: 18px;
+  }
+
+  .discounts-list {
+    margin-bottom: 20px;
+  }
+
+  .discounts-list__item {
+    font-size: 12px;
+  }
+
+  .discounts-list__item:last-child {
+    padding-left: 0px;
+  }
+
+  .discounts-list__item:last-child::before {
+    display: none;
+  }
+
 }
 
 /* xs <= Small (sm) */
@@ -275,6 +354,48 @@
   .specificity__item:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 15px;
+  }
+
+  .rules {
+    margin-bottom: 30px;
+    padding-top: 10px;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .nav-tabs .nav-link,
+  .tab__title,
+  .discounts__title {
+    font-size: 20px;
+  }
+
+  .tab__title.tab__title--number {
+    font-size: 50px;
+  }
+
+  .tab__title.tab__title--number::before {
+    width: 83%;
+  }
+
+  .tab__title.tab__title--number::after {
+    left: 40px;
+  }
+
+  .discounts-list {
+    display: none !important;
+  }
+
+
+  .tab-sublist__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .tab-list div>li:first-child,
+  .tab-list div>li:nth-child(2) {
+    margin-bottom: 20px;
   }
 
 }
