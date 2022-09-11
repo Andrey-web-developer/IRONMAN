@@ -79,6 +79,10 @@
     font-size: 66px;
   }
 
+  .sports-list__title {
+    font-size: 20px;
+  }
+
 }
 
 /* md <= Large (lg) */
@@ -387,7 +391,6 @@
     display: none !important;
   }
 
-
   .tab-sublist__title {
     margin-bottom: 10px;
     font-size: 18px;
@@ -396,6 +399,15 @@
   .tab-list div>li:first-child,
   .tab-list div>li:nth-child(2) {
     margin-bottom: 20px;
+  }
+
+  .sports-food__title {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .sports-list__title {
+    font-size: 25px;
   }
 
 }
