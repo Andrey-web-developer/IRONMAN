@@ -79,8 +79,13 @@
     font-size: 66px;
   }
 
-  .sports-list__title {
+  .sports-list__title,
+  .accessories-list__title {
     font-size: 20px;
+  }
+
+  .accessories-list__text {
+    font-size: 12px;
   }
 
 }
@@ -274,6 +279,10 @@
     display: none;
   }
 
+  .accessories-list__text {
+    font-size: 14px;
+  }
+
 }
 
 /* xs <= Small (sm) */
@@ -406,8 +415,13 @@
     text-align: center;
   }
 
-  .sports-list__title {
+  .sports-list__title,
+  .accessories-list__title {
     font-size: 25px;
+  }
+
+  .accessories-list__text {
+    font-size: 18px;
   }
 
 }

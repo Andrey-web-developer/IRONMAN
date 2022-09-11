@@ -680,14 +680,20 @@ body {
 }
 
 /* -- RULES-END -- */
-/* -- SPORT-FOOD-START -- */
-.sports-food {
+/* -- SPORT-FOOD-START AND ACCESSORIES-START -- */
+.sports-food,
+.accessories {
   padding-top: 35px;
   padding-bottom: 165px;
   background-color: #EEF1F4;
 }
 
-.sports-food__title {
+.accessories {
+  padding-bottom: 400px;
+}
+
+.sports-food__title,
+.accessories__title {
   margin: 0;
   margin-bottom: 35px;
   font-family: 'Bebas Neue Pro';
@@ -699,22 +705,25 @@ body {
   color: var(--color-accent);
 }
 
-.sports-list__item {
+.sports-list__item,
+.accessories-list__item {
   background-color: #FFF;
   border-radius: 10px;
   filter: drop-shadow(0px 0px 14px rgba(82, 174, 251, 0));
   transition: filter 0.3s ease-in-out;
 }
 
-.sports-list__item:hover {
+.sports-list__item:hover,
+.accessories-list__item:hover {
   filter: drop-shadow(0px 0px 14px rgba(82, 174, 251, 0.3));
 }
 
-.sports-list__title {
+.sports-list__title,
+.accessories-list__title {
   position: relative;
   margin: 0;
   margin-bottom: 24px;
-  padding: 25px 0;
+  padding: 25px 5px;
   font-family: 'Bebas Neue Pro';
   font-weight: 700;
   font-size: 23px;
@@ -725,7 +734,8 @@ body {
   color: var(--color-accent);
 }
 
-.sports-list__title::before {
+.sports-list__title::before,
+.accessories-list__title::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -735,4 +745,34 @@ body {
   transform: translateX(-50%);
 }
 
-/* -- SPORT-FOOD-END -- */
+.accessories-list__item {
+  position: relative;
+}
+
+.accessories-list__text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #FFF;
+  text-align: center;
+  background-color: #FB9952;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.accessories-list__text span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.accessories-list__title--offset {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+/* -- SPORT-FOOD-END AND ACCESSORIES-END -- */
