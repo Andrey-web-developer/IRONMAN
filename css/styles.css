@@ -103,17 +103,17 @@ body {
 }
 
 /* -- СИСТЕМНЫЕ СВОЙСТВА-END -- */
-/* -- HEADER -START -- */
+/* -- HEADER-START -- */
 .overlay {
-position: fixed;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0,0,0,0.5);
-z-index: 99;
-opacity: 0;
-visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .lock {
@@ -338,7 +338,7 @@ visibility: hidden;
 
 .dropdown__list,
 .header-bottom__sub-list {
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 .header-bottom__item:not(:last-child) {
@@ -398,13 +398,7 @@ visibility: hidden;
   background-color: #FFF;
 }
 
-
-
-
-
-
-
-
+/* -- HEADER-END -- */
 /* -- PRODUCTION-START -- */
 .production {
   padding-top: 35px;

@@ -423,7 +423,9 @@
 
 /* xs <= Small (sm) */
 @media (max-width : 575.98px) {
-  .header-info__phone, .header-info__email {
+
+  .header-info__phone,
+  .header-info__email {
     font-size: 14px;
   }
 
