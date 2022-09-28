@@ -25,6 +25,15 @@ img {
 }
 
 @font-face {
+  font-family: 'CeraPro';
+  src: url('../fonts/CeraPro/CeraPro-Bold.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: 'Bebas Neue Pro';
   src: url('../fonts/BebasNeuePro/BebasNeuePro-Bold.woff2') format('woff2');
   font-display: swap;
@@ -40,7 +49,8 @@ body {
   --color-accent: #0D2B4D;
   --color-grey: #D0D8DF;
   --color-blue: #52AEFB;
-  --color-light: #fff;
+  --color-light: #FFF;
+  --color-footer: #556A83;
 }
 
 /* -- СКРЫТИЕ ЭЛЕМЕНТОВ -- */
@@ -74,21 +84,27 @@ body {
   list-style: none;
 }
 
-.header-info__phone,
-.header-info__email,
+.contacts__link,
 .header-top__link,
 .header-bottom__link,
 .dropdown__link,
-.header-bottom__sub-link {
+.header-bottom__sub-link,
+.footer__title-link,
+.footer__link,
+.contacts__link--footer svg,
+.footer__social-link {
   transition: color 0.3s ease;
 }
 
-.header-info__phone:hover,
-.header-info__email:hover,
+.contacts__link:hover,
 .header-top__link:hover,
 .header-bottom__link:hover,
 .dropdown__link:hover,
-.header-bottom__sub-link:hover {
+.header-bottom__sub-link:hover,
+.footer__title-link:hover,
+.footer__link:hover,
+.contacts__link--footer:hover svg,
+.footer__social-link:hover {
   color: var(--color-blue);
 }
 
@@ -102,8 +118,6 @@ body {
   transform: translateY(-10px);
 }
 
-/* -- СИСТЕМНЫЕ СВОЙСТВА-END -- */
-/* -- HEADER-START -- */
 .overlay {
   position: fixed;
   left: 0;
@@ -120,6 +134,8 @@ body {
   overflow: hidden;
 }
 
+/* -- СИСТЕМНЫЕ СВОЙСТВА-END -- */
+/* -- HEADER-START -- */
 .header {
   padding-top: 10px;
 }
@@ -133,29 +149,16 @@ body {
   margin-bottom: 10px;
 }
 
-.header-info__phone,
-.header-info__email {
-  position: relative;
-  padding-left: 30px;
+.contacts__item {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.3;
   color: var(--color-accent);
 }
 
-.header-info__phone::before {
-  content: url(../images/header/phone.svg);
-}
-
-.header-info__email::before {
-  content: url(../images/header/mail.svg);
-}
-
-.header-info__phone::before,
-.header-info__email::before {
-  position: absolute;
-  left: 0;
-  top: 2px;
+.contacts__link svg {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-top {
@@ -230,7 +233,7 @@ body {
   font-size: 12px;
   line-height: 1.3;
   text-align: center;
-  color: #FFF;
+  color: var(--color-light);
   z-index: 2;
 }
 
@@ -284,7 +287,7 @@ body {
   left: 0;
   z-index: 100;
   min-width: 966px;
-  background-color: #fff;
+  background-color: var(--color-light);
   border-radius: 0px 0px 10px 10px;
   filter: drop-shadow(0px 0px 12px rgba(13, 43, 77, 0.25));
 }
@@ -331,7 +334,7 @@ body {
   position: absolute;
   top: 36px;
   z-index: 100;
-  background-color: #FFF;
+  background-color: var(--color-light);
   border-radius: 0px 0px 10px 10px;
   filter: drop-shadow(0px 0px 12px rgba(13, 43, 77, 0.25));
 }
@@ -352,7 +355,7 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #FFF;
+  color: var(--color-light);
 }
 
 .header-bottom__link {
@@ -380,7 +383,7 @@ body {
   top: 0;
   width: 100%;
   height: 2px;
-  background-color: #FFF;
+  background-color: var(--color-light);
 }
 
 .burger::after {
@@ -395,10 +398,82 @@ body {
   transform: translateY(-50%);
   width: 100%;
   height: 2px;
-  background-color: #FFF;
+  background-color: var(--color-light);
 }
 
 /* -- HEADER-END -- */
+/* -- FOOTER-START -- */
+.footer {
+  padding-top: 30px;
+  background-color: var(--color-accent);
+}
+
+.footer__list {
+  max-height: 258px;
+}
+
+.footer__wrapper {
+  margin-bottom: 30px;
+}
+
+.footer__inner {
+  padding-bottom: 15px;
+}
+
+.footer__item,
+.footer__title,
+.footer-copyright__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--color-light);
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer__title {
+  margin: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.contacts__list--footer {
+  margin-bottom: 28px;
+}
+
+.contacts__list--footer .contacts__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contacts__link--footer {
+  color: var(--color-light);
+}
+
+.contacts__link--footer svg,
+.footer__social-link {
+  color: var(--color-footer);
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__social-link svg {
+  fill: currentColor;
+}
+
+.footer-copyright {
+  border-top: 1px solid var(--color-footer);
+}
+
+.footer-copyright__text {
+  display: inline-block;
+  padding: 12px 0;
+}
+
+
 /* -- PRODUCTION-START -- */
 .production {
   padding-top: 35px;
@@ -466,7 +541,7 @@ body {
 
 .production__link:hover {
   color: var(--color-blue);
-  background-color: #FFF;
+  background-color: var(--color-light);
 }
 
 .iron-quality {
@@ -686,7 +761,7 @@ body {
 }
 
 .specificity {
-  padding-top: 60px;
+  padding: 60px 0 170px 0;
   background-color: #F6F7F9;
 }
 
@@ -706,10 +781,6 @@ body {
 
 .specificity__title--right {
   text-align: right;
-}
-
-.specificity__inner {
-  padding-bottom: 185px;
 }
 
 .specificity__list {
@@ -842,7 +913,7 @@ body {
   width: 15px;
   height: 15px;
   background-color: #F9A01F;
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--color-light);
   border-radius: 50%;
   box-shadow: 0px 0px 16px #F9A01F;
   transition: transform 2s ease-in-out;
@@ -1021,7 +1092,7 @@ body {
 
 .sports-list__item,
 .accessories-list__item {
-  background-color: #FFF;
+  background-color: var(--color-light);
   border-radius: 10px;
   filter: drop-shadow(0px 0px 14px rgba(82, 174, 251, 0));
   transition: filter 0.3s ease-in-out;
@@ -1073,7 +1144,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3;
-  color: #FFF;
+  color: var(--color-light);
   text-align: center;
   background-color: #FB9952;
   border-radius: 10px 10px 0px 0px;
@@ -1089,4 +1160,4 @@ body {
   padding-bottom: 15px;
 }
 
-/* -- SPORT-FOOD-END AND ACCESSORIES-END -- */
+/* -- SPORT-FOOD-END AND ACCESSORIES-END -- *
