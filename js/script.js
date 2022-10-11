@@ -61,3 +61,41 @@ menu.addEventListener('click', (e) => {
     unlockScroll();
   }
 });
+
+const swiper1 = new Swiper('.swiper1', {
+  slidesPerView: 1,
+  speed: 800,
+  grabCursor: true,
+  autoHeight: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+});
+
+const swiper2 = new Swiper('.swiper2', {
+  slidesPerView: 'auto',
+  spaceBetween: 25,
+  grabCursor: true,
+  autoHeight: true,
+  loop: true,
+  slideToClickedSlide: true,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+
+
+
+

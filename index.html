@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRONMAN спортивное питание</title>
+  <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/swiper.js/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="libs/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <div class="header-info">
+      <div class="container">
+        <div class="row header-info__contacts">
+          <div class="col">
+            <ul class=" d-flex justify-content-between contacts__list list-reset">
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+74999686244" title="Позвоните нам">
+                  <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.4867 12.7194L13.5491 11.0319C13.3809 10.9602 13.1939 10.9451 13.0164 10.9889C12.8389 11.0326 12.6804 11.1329 12.5647 11.2745L10.8209 13.405C8.08423 12.1147 5.88181 9.91225 4.59149 7.17555L6.72199 5.43177C6.86391 5.31634 6.96436 5.15782 7.00813 4.9802C7.0519 4.80258 7.03661 4.61553 6.96457 4.44738L5.27705 0.509807C5.19798 0.328542 5.05815 0.180544 4.88165 0.0913347C4.70516 0.00212529 4.50307 -0.0227045 4.31023 0.0211269L0.653918 0.864892C0.467997 0.907825 0.302119 1.01251 0.183355 1.16186C0.064592 1.3112 -4.28284e-05 1.4964 2.12917e-08 1.68721C2.12917e-08 10.7049 7.30911 18 16.3128 18C16.5037 18.0001 16.6889 17.9355 16.8384 17.8168C16.9878 17.698 17.0925 17.5321 17.1355 17.3461L17.9792 13.6898C18.0228 13.496 17.9974 13.2931 17.9075 13.116C17.8176 12.9389 17.6688 12.7987 17.4867 12.7194Z" />
+                  </svg>
+                  +7 499 9686 244
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:Info@ironman.ru" title="Напишите нам">
+                  <svg width="18" height="14" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.659 4.37961C17.7961 4.27253 18 4.3727 18 4.54194V11.6053C18 12.5206 17.2441 13.2632 16.3125 13.2632H1.6875C0.755859 13.2632 0 12.5206 0 11.6053V4.54539C0 4.3727 0.200391 4.27599 0.341016 4.38306C1.12852 4.98405 2.17266 5.74737 5.75859 8.30674C6.50039 8.83865 7.75195 9.95773 9 9.95082C10.2551 9.96118 11.5312 8.81793 12.2449 8.30674C15.8309 5.74737 16.8715 4.98059 17.659 4.37961ZM9 8.8421C9.81563 8.85592 10.9898 7.83355 11.5805 7.41217C16.2457 4.08602 16.6008 3.79589 17.6766 2.96694C17.8805 2.81151 18 2.56974 18 2.31414V1.65789C18 0.742599 17.2441 0 16.3125 0H1.6875C0.755859 0 0 0.742599 0 1.65789V2.31414C0 2.56974 0.119531 2.80806 0.323437 2.96694C1.39922 3.79243 1.7543 4.08602 6.41953 7.41217C7.01016 7.83355 8.18437 8.85592 9 8.8421Z" />
+                  </svg>
+                  info@ironman.ru
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center header-top">
+        <div class="col">
+          <a href="index.html" class="logo header-top__logo">
+            <img src="images/header/ironman.svg" alt="IRONMAN" class="logo__img">
+          </a>
+        </div>
+        <div class="col d-none d-xl-block">
+          <p class="header-top__text">
+            Спортивное и&nbsp;функциональное
+            питание с&nbsp;1996 года
+          </p>
+        </div>
+        <div class="col-12 col-md-auto order-last order-md-0 ">
+          <form action="#" class="d-flex header-top__form">
+            <button class="header-top__search-btn btn-reset" type="submit">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.9488 20.8977C16.4434 20.8977 20.8977 16.4434 20.8977 10.9488C20.8977 5.45425 16.4434 1 10.9488 1C5.45424 1 1 5.45425 1 10.9488C1 16.4434 5.45424 20.8977 10.9488 20.8977Z"
+                  stroke="#0D2B4D" stroke-miterlimit="10" />
+                <path d="M17.9766 17.9723L25 24.9999" stroke="#0D2B4D" stroke-miterlimit="10" />
+              </svg>
+            </button>
+            <input class="header-top__search input-reset" placeholder="Поиск по сайту" type="search">
+          </form>
+        </div>
+        <div class="col d-none d-lg-block">
+          <nav>
+            <ul class="d-flex header-top__list list-reset">
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">доставка</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">оптовикам</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <ul class="d-flex justify-content-end header-top__group list-reset">
+            <li class="header-top__group-item">
+              <a class="header-top__group-link" href="#">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.2178 13.7823C15.7475 13.7823 18.609 10.9209 18.609 7.39116C18.609 3.86142 15.7475 1 12.2178 1C8.68806 1 5.82666 3.86142 5.82666 7.39116C5.82666 10.9209 8.68806 13.7823 12.2178 13.7823Z"
+                    stroke-miterlimit="10" />
+                  <path d="M1 25C1 18.8033 6.021 13.7823 12.2177 13.7823C18.4144 13.7823 23.4354 18.8033 23.4354 25"
+                    stroke-miterlimit="10" />
+                </svg>
+              </a>
+            </li>
+            <li class="header-top__group-item">
+              <a class="header-top__group-link" href="#">
+                <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.9916 6.98082H2.86903L1 25H23.8561L21.9916 6.98082Z" stroke-miterlimit="10" />
+                  <path
+                    d="M16.4835 11.1558V5.05329C16.4835 2.81498 14.6686 1 12.4302 1C10.1919 1 8.37695 2.81498 8.37695 5.05329V11.1558"
+                    stroke-miterlimit="10" />
+                </svg>
+                <span>2</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="header-bottom__wrapper">
+              <a href="sports-food.html" class="header-bottom__btn d-none d-lg-block">
+                <svg width="17" height="14" viewBox="0 0 17 14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0H17V2H0V0Z" />
+                  <path d="M0 6H10V8H0V6Z" />
+                  <path d="M17 12H0V14H17V12Z" />
+                </svg>
+                спортивное питание
+              </a>
+              <ul class="d-flex justify-content-between flex-wrap dropdown__list list-reset">
+                <li class="dropdown__item"><a href="#" class="dropdown__link">L карнитин</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">гейнеры</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">напитки</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">аминокислоты</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">для суставов</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">напитки упаковка</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">анаболические формулы</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">жидкие формы</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">протеины</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">батончики</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">заменители питания</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">сжигатели</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">батончики боксы</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">креатин</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">энергетики</a></li>
+                <li class="dropdown__item"><a href="#" class="dropdown__link">витамины</a></li>
+                <li class="dropdown__item dropdown__item--position"><a href="#" class="dropdown__link">лечебное
+                    питание</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-lg-8 d-flex justify-content-end justify-content-lg-start">
+            <nav class="nav">
+              <ul class="d-flex header-bottom__list list-reset">
+                <li class="header-bottom__item d-block d-lg-none"><a href="sports-food.html"
+                    class="header-bottom__link">спортивное
+                    питание</a></li>
+                <li class="header-bottom__item">
+                  <a href="#" class="header-bottom__link header-bottom__link--drop">
+                    аксессуары
+                    <svg width="12" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 1L5 5L1 1" />
+                    </svg>
+                  </a>
+                  <ul class="header-bottom__sub-list list-reset">
+                    <li class="header-bottom__sub-item mobile-back">
+                      <a href="#" class="d-lg-none header-bottom__sub-link mobile-back__link">
+                        <svg width="12" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" />
+                        </svg>
+                        назад
+                      </a>
+                    </li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">ремни</a></li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">шейкеры и
+                        таблетницы</a></li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">напульсники и др</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-bottom__item"><a href="#" class="header-bottom__link">производство</a></li>
+                <li class="header-bottom__item"><a href="#" class="header-bottom__link">где купить</a></li>
+                <li class="header-bottom__item">
+                  <a href="#" class="header-bottom__link header-bottom__link--drop">
+                    библиотека
+                    <svg width="12" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 1L5 5L1 1" />
+                    </svg>
+                  </a>
+                  <ul class="header-bottom__sub-list header-bottom__sub-list--offset list-reset">
+                    <li class="header-bottom__sub-item mobile-back">
+                      <a href="#" class="d-lg-none header-bottom__sub-link mobile-back__link">
+                        <svg width="12" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" />
+                        </svg>
+                        назад
+                      </a>
+                    </li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">новости</a></li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">статьи</a></li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">история</a></li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">тысяча вопросов</a>
+                    </li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">бодибилдинг от а до
+                        я</a></li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">журналы</a></li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">упражнения
+                        (видео)</a></li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">фотогалерея</a></li>
+                    <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">форум</a></li>
+                  </ul>
+                </li>
+                <li class="header-bottom__item d-lg-none"><a href="#" class="header-bottom__link">доставка</a></li>
+                <li class="header-bottom__item d-lg-none"><a href="#" class="header-bottom__link">оптовикам</a></li>
+                <li class="header-bottom__item d-lg-none"><a href="#" class="header-bottom__link">контакты</a></li>
+              </ul>
+            </nav>
+            <button class="burger btn-reset" aria-label="Открыть меню">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 class="visually-hidden">IRONMAN интернет-магазин спортивного питания</h1>
+      <div class="swiper swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--bg d-flex">
+            <div class="container swiper-slide--pos">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-5 col-xl-4 offset-0 offset-lg-1">
+                  <div class="swiper-slide__text">
+                    <h2 class="d-flex flex-column swiper-slide__title">ironman <span>спортивное питание</span></h2>
+                    <a href="sports-food.html" class="swiper-slide__button button">в каталог</a>
+                  </div>
+                </div>
+                <div class="col-9 swiper-slide__inner-img d-flex align-items-end">
+                  <img src="images/index/slide-1.png" alt="Продукция IRONMAN">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--bg d-flex">
+            <div class="container swiper-slide--pos">
+              <div class="row justify-content-end">
+                <div class="col-auto col-lg-5 col-xl-4 swiper-slide__wrapper">
+                  <div class="swiper-slide__text">
+                    <h2 class="d-flex flex-column swiper-slide__title">ironman <span>спортивное питание</span></h2>
+                    <a href="sports-food.html" class="swiper-slide__button button">в каталог</a>
+                  </div>
+                </div>
+                <div class="col-8 swiper-slide__inner-img swiper-slide__inner-img--left d-flex align-items-end">
+                  <img src="images/index/slide-2.png" alt="Продукция IRONMAN">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container advantages__container">
+        <div class="row">
+          <div class="col offset-0 offset-lg-1">
+            <h2 class="advantages__title">преимущества</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-9 col-xl-8 offset-0 offset-lg-1">
+            <ul class="d-flex justify-content-between flex-wrap advantages__list list-reset">
+              <li class="d-flex flex-column advantages__item col-12 col-sm-5">
+                <h3 class="advantages__subtitle"><span>90%</span> импортных ингридиентов</h3>
+                <p class="advantages__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque
+                </p>
+              </li>
+              <li class="d-flex flex-column advantages__item col-12 col-sm-5">
+                <h3 class="advantages__subtitle">Качественный белок</h3>
+                <p class="advantages__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque
+                </p>
+              </li>
+              <li class="d-flex flex-column advantages__item col-12 col-sm-5">
+                <h3 class="advantages__subtitle">Свое производство</h3>
+                <p class="advantages__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque
+                </p>
+              </li>
+              <li class="d-flex flex-column advantages__item col-12 col-sm-5">
+                <h3 class="advantages__subtitle">Гарантия качества</h3>
+                <p class="advantages__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row advantages__wrapper">
+          <div class="col">
+            <img src="images/index/advantages.png" alt="Продукция IRONMAN" class="advantages__img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="art-lab">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-md-8 col-lg-7">
+            <div class="row">
+              <div class="col">
+                <h2 class="art-lab__title text-center">собственное производство art-lab</h2>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <ul class="art-lab__list list-reset">
+                  <div class="row justify-content-center art-lab__wrapper">
+                    <div class="col-6 col-sm-4">
+                      <li class="art-lab__item art-lab__item--img1">
+                        <p class="art-lab__text">Крупный производственный комплекс</p>
+                      </li>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <li class="art-lab__item art-lab__item--img2">
+                        <p class="art-lab__text">Научный отдел по разработке рецептур и&nbsp;технологий</p>
+                      </li>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <li class="art-lab__item art-lab__item--img3">
+                        <p class="art-lab__text">Лабаратории контроля и&nbsp;качества</p>
+                      </li>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <li class="art-lab__item art-lab__item--img4">
+                        <p class="art-lab__text">Временная шкала</p>
+                      </li>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <li class="art-lab__item art-lab__item--img5">
+                        <p class="art-lab__text">Историческая лента событий</p>
+                      </li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-none d-md-block">
+            <ul class="art-lab__list-img list-reset">
+              <li class="col-8 col-sm-5 col-md-auto art-lab__item-img">
+                <img src="images/index/art-lab-img1.jpg" alt="Фото с производства" class="art-lab__img">
+              </li>
+              <li class="col-8 col-sm-5 col-md-auto art-lab__item-img">
+                <img src="images/index/art-lab-img2.jpg" alt="Фото с производства" class="art-lab__img">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article class="news">
+      <div class="background-blue"></div>
+      <div class="container">
+        <div class="row news__wrapper">
+          <div class="col">
+            <h2 class="news__title text-center">новости</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="news__list list-reset">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <li class="d-flex flex-column news__item">
+                    <div class="news__img">
+                      <a href="#" class="news__img-link">
+                        <div class="d-flex flex-column news__data">
+                          <span>20</span>
+                          <span>02</span>
+                        </div>
+                        <img src="images/index/news-20-02.jpg" alt="Иллюстрация новости" class="news__img">
+                      </a>
+                    </div>
+                    <div class="news__content">
+                      <h3 class="news__subtitle">Для человека, занимающегося спортом</h3>
+                      <p class="news__text">
+                        Микрокапли покрытия распыляются форсункой на все таблетки во вращающемся
+                        барабане. Теперь таблетки защищены от стирания ...
+                      </p>
+                      <a href="#" class="news__link">читать статью</a>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <li class="d-flex flex-column news__item">
+                    <div class="news__img">
+                      <a href="#" class="news__img-link">
+                        <div class="d-flex flex-column news__data">
+                          <span>11</span>
+                          <span>03</span>
+                        </div>
+                        <img src="images/index/news-11-03.jpg" alt="Иллюстрация новости">
+                      </a>
+                    </div>
+                    <div class="news__content">
+                      <h3 class="news__subtitle">Вреден&nbsp;ли протеин для здоровья?</h3>
+                      <p class="news__text">
+                        Микрокапли покрытия распыляются форсункой на все таблетки во вращающемся
+                        барабане. Теперь таблетки защищены от стирания ...
+                      </p>
+                      <a href="#" class="news__link">читать статью</a>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <li class="d-flex flex-column news__item">
+                    <div class="news__img">
+                      <a href="#" class="news__img-link">
+                        <div class="d-flex flex-column news__data">
+                          <span>19</span>
+                          <span>03</span>
+                        </div>
+                        <img src="images/index/news-19-03.jpg" alt="Иллюстрация новости">
+                      </a>
+                    </div>
+                    <div class="news__content">
+                      <h3 class="news__subtitle">ликбез в&nbsp;основах спортивного питания</h3>
+                      <p class="news__text">
+                        Микрокапли покрытия распыляются форсункой на все таблетки во вращающемся
+                        барабане. Теперь таблетки защищены от стирания ...
+                      </p>
+                      <a href="#" class="news__link">читать статью</a>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                  <li class="d-flex flex-column news__item">
+                    <div class="news__img">
+                      <a href="#" class="news__img-link">
+                        <div class="d-flex flex-column news__data">
+                          <span>28</span>
+                          <span>03</span>
+                        </div>
+                        <img src="images/index/news-28-03.jpg" alt="Иллюстрация новости">
+                      </a>
+                    </div>
+                    <div class="news__content">
+                      <h3 class="news__subtitle">использование протеиновых коктейлей</h3>
+                      <p class="news__text">
+                        Микрокапли покрытия распыляются форсункой на все таблетки во вращающемся
+                        барабане. Теперь таблетки защищены от стирания ...
+                      </p>
+                      <a href="#" class="news__link">читать статью</a>
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <a href="#" class="news__button button">все новости</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="product-advertising">
+      <div class="swiper swiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--bg d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-7">
+                  <div class="swiper-slide__text">
+                    <h2 class="swiper-slide__title">легкий кокосовый батончик без сахара</h2>
+                    <a href="sports-food.html" class="swiper-slide__button button">в каталог</a>
+                  </div>
+                </div>
+                <div class="col-8 col-lg-7 swiper-slide__inner-img">
+                  <img src="images/index/swiper2-slide.png" alt="Фото продукции">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--bg d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-7">
+                  <div class="swiper-slide__text">
+                    <h2 class="swiper-slide__title">легкий кокосовый батончик без сахара</h2>
+                    <a href="sports-food.html" class="swiper-slide__button button">в каталог</a>
+                  </div>
+                </div>
+                <div class="col-8 col-lg-7 swiper-slide__inner-img">
+                  <img src="images/index/swiper2-slide.png" alt="Фото продукции">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--bg d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-7">
+                  <div class="swiper-slide__text">
+                    <h2 class="swiper-slide__title">легкий кокосовый батончик без сахара</h2>
+                    <a href="sports-food.html" class="swiper-slide__button button">в каталог</a>
+                  </div>
+                </div>
+                <div class="col-8 col-lg-7 swiper-slide__inner-img">
+                  <img src="images/index/swiper2-slide.png" alt="Фото продукции">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--bg d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-7">
+                  <div class="swiper-slide__text">
+                    <h2 class="swiper-slide__title">легкий кокосовый батончик без сахара</h2>
+                    <a href="sports-food.html" class="swiper-slide__button button">в каталог</a>
+                  </div>
+                </div>
+                <div class="col-8 col-lg-7 swiper-slide__inner-img">
+                  <img src="images/index/swiper2-slide.png" alt="Фото продукции">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--bg d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-lg-7">
+                  <div class="swiper-slide__text">
+                    <h2 class="swiper-slide__title">легкий кокосовый батончик без сахара</h2>
+                    <a href="sports-food.html" class="swiper-slide__button button">в каталог</a>
+                  </div>
+                </div>
+                <div class="col-8 col-lg-7 swiper-slide__inner-img">
+                  <img src="images/index/swiper2-slide.png" alt="Фото продукции">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </article>
+    <section class="products">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2 class="products__title">продукция <span>ironman</span></h2>
+          </div>
+        </div>
+        <article class="cards">
+          <div class="row">
+            <div class="col">
+              <ul class="cards__list list-reset">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 cards__wrapper">
+                    <li class="cards__item">
+                      <a href="#" class="cards__img-link">
+                        <span class="cards__sale">sale</span>
+                        <img src="images/index/products-1.png" alt="Фото товара" class="cards__img">
+                      </a>
+                      <div class="cards__content">
+                        <a href="#" class="cards__title-link">
+                          <h3 class="cards__title">IM F80 500g шокладный напиток протеин</h3>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-between cards__inner">
+                          <div class="d-flex align-items-center cards__price">
+                            <span class="cards__price-now">559 ₽</span>
+                            <span class="cards__price-old">900 ₽</span>
+                          </div>
+                          <button class="cards__basket btn-reset">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M22.9916 6.98096H3.86903L2 25.0001H24.8561L22.9916 6.98096Z" stroke-width="2"
+                                stroke-miterlimit="10" />
+                              <path
+                                d="M17.4835 11.1558V5.05329C17.4835 2.81498 15.6686 1 13.4302 1C11.1919 1 9.37695 2.81498 9.37695 5.05329V11.1558"
+                                stroke-width="2" stroke-miterlimit="10" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 cards__wrapper">
+                    <li class="cards__item">
+                      <a href="#" class="cards__img-link">
+                        <span class="cards__sale">sale</span>
+                        <img src="images/index/products-2.png" alt="Фото товара" class="cards__img">
+                      </a>
+                      <div class="cards__content">
+                        <a href="#" class="cards__title-link">
+                          <h3 class="cards__title">IM F80 500g шокладный напиток протеин</h3>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-between cards__inner">
+                          <div class="d-flex align-items-center cards__price">
+                            <span class="cards__price-now">559 ₽</span>
+                            <span class="cards__price-old">900 ₽</span>
+                          </div>
+                          <button class="cards__basket btn-reset">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M22.9916 6.98096H3.86903L2 25.0001H24.8561L22.9916 6.98096Z" stroke-width="2"
+                                stroke-miterlimit="10" />
+                              <path
+                                d="M17.4835 11.1558V5.05329C17.4835 2.81498 15.6686 1 13.4302 1C11.1919 1 9.37695 2.81498 9.37695 5.05329V11.1558"
+                                stroke-width="2" stroke-miterlimit="10" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 cards__wrapper">
+                    <li class="cards__item">
+                      <a href="#" class="cards__img-link">
+                        <span class="cards__sale">sale</span>
+                        <img src="images/index/products-3.png" alt="Фото товара" class="cards__img">
+                      </a>
+                      <div class="cards__content">
+                        <a href="#" class="cards__title-link">
+                          <h3 class="cards__title">IM F80 500g шокладный напиток протеин</h3>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-between cards__inner">
+                          <div class="d-flex align-items-center cards__price">
+                            <span class="cards__price-now">559 ₽</span>
+                            <span class="cards__price-old">900 ₽</span>
+                          </div>
+                          <button class="cards__basket btn-reset">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M22.9916 6.98096H3.86903L2 25.0001H24.8561L22.9916 6.98096Z" stroke-width="2"
+                                stroke-miterlimit="10" />
+                              <path
+                                d="M17.4835 11.1558V5.05329C17.4835 2.81498 15.6686 1 13.4302 1C11.1919 1 9.37695 2.81498 9.37695 5.05329V11.1558"
+                                stroke-width="2" stroke-miterlimit="10" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 cards__wrapper">
+                    <li class="cards__item">
+                      <a href="#" class="cards__img-link">
+                        <span class="cards__sale">sale</span>
+                        <img src="images/index/products-4.png" alt="Фото товара" class="cards__img">
+                      </a>
+                      <div class="cards__content">
+                        <a href="#" class="cards__title-link">
+                          <h3 class="cards__title">IM F80 500g шокладный напиток протеин</h3>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-between cards__inner">
+                          <div class="d-flex align-items-center cards__price">
+                            <span class="cards__price-now">559 ₽</span>
+                            <span class="cards__price-old">900 ₽</span>
+                          </div>
+                          <button class="cards__basket btn-reset">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M22.9916 6.98096H3.86903L2 25.0001H24.8561L22.9916 6.98096Z" stroke-width="2"
+                                stroke-miterlimit="10" />
+                              <path
+                                d="M17.4835 11.1558V5.05329C17.4835 2.81498 15.6686 1 13.4302 1C11.1919 1 9.37695 2.81498 9.37695 5.05329V11.1558"
+                                stroke-width="2" stroke-miterlimit="10" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 cards__wrapper">
+                    <li class="cards__item">
+                      <a href="#" class="cards__img-link">
+                        <span class="cards__sale">sale</span>
+                        <img src="images/index/products-1.png" alt="Фото товара" class="cards__img">
+                      </a>
+                      <div class="cards__content">
+                        <a href="#" class="cards__title-link">
+                          <h3 class="cards__title">IM F80 500g шокладный напиток протеин</h3>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-between cards__inner">
+                          <div class="d-flex align-items-center cards__price">
+                            <span class="cards__price-now">559 ₽</span>
+                            <span class="cards__price-old">900 ₽</span>
+                          </div>
+                          <button class="cards__basket btn-reset">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M22.9916 6.98096H3.86903L2 25.0001H24.8561L22.9916 6.98096Z" stroke-width="2"
+                                stroke-miterlimit="10" />
+                              <path
+                                d="M17.4835 11.1558V5.05329C17.4835 2.81498 15.6686 1 13.4302 1C11.1919 1 9.37695 2.81498 9.37695 5.05329V11.1558"
+                                stroke-width="2" stroke-miterlimit="10" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 cards__wrapper">
+                    <li class="cards__item">
+                      <a href="#" class="cards__img-link">
+                        <span class="cards__sale">sale</span>
+                        <img src="images/index/products-2.png" alt="Фото товара" class="cards__img">
+                      </a>
+                      <div class="cards__content">
+                        <a href="#" class="cards__title-link">
+                          <h3 class="cards__title">IM F80 500g шокладный напиток протеин</h3>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-between cards__inner">
+                          <div class="d-flex align-items-center cards__price">
+                            <span class="cards__price-now">559 ₽</span>
+                            <span class="cards__price-old">900 ₽</span>
+                          </div>
+                          <button class="cards__basket btn-reset">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M22.9916 6.98096H3.86903L2 25.0001H24.8561L22.9916 6.98096Z" stroke-width="2"
+                                stroke-miterlimit="10" />
+                              <path
+                                d="M17.4835 11.1558V5.05329C17.4835 2.81498 15.6686 1 13.4302 1C11.1919 1 9.37695 2.81498 9.37695 5.05329V11.1558"
+                                stroke-width="2" stroke-miterlimit="10" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 cards__wrapper">
+                    <li class="cards__item">
+                      <a href="#" class="cards__img-link">
+                        <span class="cards__sale">sale</span>
+                        <img src="images/index/products-3.png" alt="Фото товара" class="cards__img">
+                      </a>
+                      <div class="cards__content">
+                        <a href="#" class="cards__title-link">
+                          <h3 class="cards__title">IM F80 500g шокладный напиток протеин</h3>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-between cards__inner">
+                          <div class="d-flex align-items-center cards__price">
+                            <span class="cards__price-now">559 ₽</span>
+                            <span class="cards__price-old">900 ₽</span>
+                          </div>
+                          <button class="cards__basket btn-reset">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M22.9916 6.98096H3.86903L2 25.0001H24.8561L22.9916 6.98096Z" stroke-width="2"
+                                stroke-miterlimit="10" />
+                              <path
+                                d="M17.4835 11.1558V5.05329C17.4835 2.81498 15.6686 1 13.4302 1C11.1919 1 9.37695 2.81498 9.37695 5.05329V11.1558"
+                                stroke-width="2" stroke-miterlimit="10" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="col-sm-6 col-lg-3 cards__wrapper">
+                    <li class="cards__item">
+                      <a href="#" class="cards__img-link">
+                        <span class="cards__sale">sale</span>
+                        <img src="images/index/products-4.png" alt="Фото товара" class="cards__img">
+                      </a>
+                      <div class="cards__content">
+                        <a href="#" class="cards__title-link">
+                          <h3 class="cards__title">IM F80 500g шокладный напиток протеин</h3>
+                        </a>
+                        <div class="d-flex align-items-center justify-content-between cards__inner">
+                          <div class="d-flex align-items-center cards__price">
+                            <span class="cards__price-now">559 ₽</span>
+                            <span class="cards__price-old">900 ₽</span>
+                          </div>
+                          <button class="cards__basket btn-reset">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M22.9916 6.98096H3.86903L2 25.0001H24.8561L22.9916 6.98096Z" stroke-width="2"
+                                stroke-miterlimit="10" />
+                              <path
+                                d="M17.4835 11.1558V5.05329C17.4835 2.81498 15.6686 1 13.4302 1C11.1919 1 9.37695 2.81498 9.37695 5.05329V11.1558"
+                                stroke-width="2" stroke-miterlimit="10" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <div class="row">
+          <div class="col text-center">
+            <a href="#" class="products__button button">вся продукция</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col footer__wrapper">
+          <a href="index.html" class="logo footer__logo">
+            <img src="images/footer/ironman-footer.svg" alt="IRONMAN" class="logo__img">
+          </a>
+        </div>
+      </div>
+      <div class="row footer__inner">
+        <div class="col-12 col-xl-6">
+          <ul class="d-flex flex-column flex-wrap mb-5 mb-xl-0 footer__list list-reset">
+            <li class="footer__item">
+              <h2 class="footer__title">
+                <a href="sports-food.html" class="footer__title-link">спортивное питание</a>
+              </h2>
+            </li>
+            <li class="footer__item"><a href="#" class="footer__link">L Карнитин</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Аминокислоты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Анаболические формулы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Батончики</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Батончики боксы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Витамины</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Гейнеры</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Для суставов</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Жидкие формы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Заменители питания</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Креатин</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Лечебное питание</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Напитки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Напитки упаковка</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Протеины</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Сжигатели</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Энергетики</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-2">
+          <ul class="d-flex flex-column flex-wrap footer__list list-reset">
+            <li class="footer__item">
+              <h2 class="footer__title">
+                <a href="sports-food.html" class="footer__title-link">аксессуары</a>
+              </h2>
+            </li>
+            <li class="footer__item"><a href="#" class="footer__link">Ремни</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Шейкеры и таблетницы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Напульсники и др...</a></li>
+        </div>
+        <div class="col-6 col-sm-4 col-xl-2">
+          <ul class="d-flex flex-column flex-wrap footer__list list-reset">
+            <li class="footer__item">
+              <h2 class="footer__title">
+                <a href="sports-food.html" class="footer__title-link">производство</a>
+              </h2>
+            </li>
+            <li class="footer__item">
+              <h2 class="footer__title">
+                <a href="sports-food.html" class="footer__title-link">доставка</a>
+              </h2>
+            </li>
+            <li class="footer__item">
+              <h2 class="footer__title">
+                <a href="sports-food.html" class="footer__title-link">оптовикам</a>
+              </h2>
+            </li>
+            <li class="footer__item">
+              <h2 class="footer__title">
+                <a href="sports-food.html" class="footer__title-link">контакты</a>
+              </h2>
+            </li>
+        </div>
+        <div class="col-12 col-sm-4 col-xl-2 mt-5 mt-sm-0">
+          <ul class=" d-flex flex-column contacts__list contacts__list--footer list-reset">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--footer" href="tel:+74999686244" title="Позвоните нам">
+                <svg width="18" height="14" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.659 4.37961C17.7961 4.27253 18 4.3727 18 4.54194V11.6053C18 12.5206 17.2441 13.2632 16.3125 13.2632H1.6875C0.755859 13.2632 0 12.5206 0 11.6053V4.54539C0 4.3727 0.200391 4.27599 0.341016 4.38306C1.12852 4.98405 2.17266 5.74737 5.75859 8.30674C6.50039 8.83865 7.75195 9.95773 9 9.95082C10.2551 9.96118 11.5312 8.81793 12.2449 8.30674C15.8309 5.74737 16.8715 4.98059 17.659 4.37961ZM9 8.8421C9.81563 8.85592 10.9898 7.83355 11.5805 7.41217C16.2457 4.08602 16.6008 3.79589 17.6766 2.96694C17.8805 2.81151 18 2.56974 18 2.31414V1.65789C18 0.742599 17.2441 0 16.3125 0H1.6875C0.755859 0 0 0.742599 0 1.65789V2.31414C0 2.56974 0.119531 2.80806 0.323437 2.96694C1.39922 3.79243 1.7543 4.08602 6.41953 7.41217C7.01016 7.83355 8.18437 8.85592 9 8.8421Z" />
+                </svg>
+                +7 499 9686 244
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--footer" href="mailto:Info@ironman.ru" title="Напишите нам">
+                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.4867 12.7194L13.5491 11.0319C13.3809 10.9602 13.1939 10.9451 13.0164 10.9889C12.8389 11.0326 12.6804 11.1329 12.5647 11.2745L10.8209 13.405C8.08423 12.1147 5.88181 9.91225 4.59149 7.17555L6.72199 5.43177C6.86391 5.31634 6.96436 5.15782 7.00813 4.9802C7.0519 4.80258 7.03661 4.61553 6.96457 4.44738L5.27705 0.509807C5.19798 0.328542 5.05815 0.180544 4.88165 0.0913347C4.70516 0.00212529 4.50307 -0.0227045 4.31023 0.0211269L0.653918 0.864892C0.467997 0.907825 0.302119 1.01251 0.183355 1.16186C0.064592 1.3112 -4.28284e-05 1.4964 2.12917e-08 1.68721C2.12917e-08 10.7049 7.30911 18 16.3128 18C16.5037 18.0001 16.6889 17.9355 16.8384 17.8168C16.9878 17.698 17.0925 17.5321 17.1355 17.3461L17.9792 13.6898C18.0228 13.496 17.9974 13.2931 17.9075 13.116C17.8176 12.9389 17.6688 12.7987 17.4867 12.7194Z" />
+                </svg>
+                info@ironman.ru
+              </a>
+            </li>
+          </ul>
+          <ul class="d-flex footer__social-list list-reset">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg width="18" height="16" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.9487 1.52171L15.2324 14.3318C15.0275 15.2359 14.493 15.4609 13.7336 15.035L9.59484 11.9851L7.59779 13.9059C7.37679 14.1269 7.19195 14.3117 6.76602 14.3117L7.06337 10.0966L14.7341 3.16516C15.0677 2.86782 14.6618 2.70307 14.2158 3.00042L4.7328 8.97149L0.650295 7.69369C-0.237731 7.41644 -0.253804 6.80567 0.835132 6.37974L16.8035 0.227849C17.5429 -0.0494076 18.1898 0.392596 17.9487 1.52171Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg width="18" height="15" viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg">
+                  <path clip-rule="evenodd"
+                    d="M17.5036 0.410689C16.7896 0.823148 15.9988 1.12161 15.1574 1.28431C14.4837 0.583756 13.5251 0.147461 12.4629 0.147461C10.4224 0.147461 8.76942 1.75895 8.76942 3.74767C8.76942 4.02851 9.04508 4.30521 9.66688 4.5674C5.79619 4.41817 3.07582 2.98389 1.25396 0.80553C0.935805 1.33613 0.754448 1.95482 0.754448 2.61496C0.754448 3.86581 1.40734 4.96846 2.39703 5.61202C1.79181 5.59337 1.22287 5.43067 0.724394 5.52394V5.96956C0.724394 6.95096 1.99804 8.407 4.51632 8.73967C3.37636 8.81946 3.05095 8.86403 2.71311 8.86403C2.47475 8.86403 2.24469 8.84123 2.01773 8.79874C2.48823 10.2299 3.85204 11.2714 5.46664 11.3004C4.20335 12.2673 3.08619 12.8425 0.88088 12.8425C1.45915 12.8425 0.289136 12.8249 0 12.7938C1.63429 13.8146 3.5743 14.4115 5.66043 14.4115C12.4525 14.4115 16.1667 8.9231 16.1667 4.88141L16.1553 3.69689C16.8787 3.19012 17.5057 2.55589 18 1.8346C17.3378 2.12063 16.6279 2.31443 15.8807 2.40148C16.6424 1.95482 17.2269 1.24908 17.5036 0.410689Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg width="18" height="13" viewBox="0 0 18 13" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.6239 2.12773C17.4169 1.34825 16.8069 0.734361 16.0325 0.526027C14.6288 0.147461 9 0.147461 9 0.147461C9 0.147461 3.37127 0.147461 1.96752 0.526027C1.19308 0.734394 0.583143 1.34825 0.376127 2.12773C0 3.54058 0 6.48837 0 6.48837C0 6.48837 0 9.43615 0.376127 10.849C0.583143 11.6285 1.19308 12.2168 1.96752 12.4251C3.37127 12.8037 9 12.8037 9 12.8037C9 12.8037 14.6287 12.8037 16.0325 12.4251C16.8069 12.2168 17.4169 11.6285 17.6239 10.849C18 9.43615 18 6.48837 18 6.48837C18 6.48837 18 3.54058 17.6239 2.12773ZM7.15908 9.16473V3.812L11.8636 6.48843L7.15908 9.16473Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <span class="footer-copyright__text">© Все права защищены 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="libs/swiper.js/swiper-bundle.min.js"></script>
+</body>
+
+</html>
