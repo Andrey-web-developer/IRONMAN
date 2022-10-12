@@ -1,6 +1,6 @@
 'use strict';
 
-const menu = document.querySelector('.nav');
+const menu = document.querySelector('.header-bottom__nav');
 const burger = document.querySelector('.burger');
 const overlay = document.querySelector('.overlay');
 
@@ -12,17 +12,17 @@ const unlockScroll = () => {
   document.body.classList.remove('lock');
 };
 
-const initialMenu = () => {
-  document.querySelector('.header-bottom__sub-list').classList.remove('transformation');
-  document.querySelector('.nav').querySelector('.header-bottom__list').classList.remove('transformation');
-  scrollTop();
-};
-
 const scrollTop = () => {
   menu.scrollTo({
     top: 0,
     behavior: 'smooth'
   });
+};
+
+const initialMenu = () => {
+  document.querySelector('.header-bottom__sub-list').classList.remove('transformation');
+  document.querySelector('.header-bottom__nav').querySelector('.header-bottom__list').classList.remove('transformation');
+  scrollTop();
 };
 
 burger.addEventListener('click', () => {
@@ -39,7 +39,8 @@ overlay.addEventListener('click', () => {
 });
 
 menu.addEventListener('click', (e) => {
-  console.log(e.target);
+  console.log(e.target); 
+  // УДАЛИТЬ
 
   if (e.target.classList.contains('header-bottom__link--drop')) {
     e.preventDefault();
@@ -51,7 +52,7 @@ menu.addEventListener('click', (e) => {
   if (e.target.classList.contains('mobile-back__link')) {
     e.preventDefault();
     e.target.closest('.header-bottom__sub-list').classList.remove('transformation');
-    e.target.closest('.nav').querySelector('.header-bottom__list').classList.remove('transformation');
+    e.target.closest('.header-bottom__nav').querySelector('.header-bottom__list').classList.remove('transformation');
     scrollTop();
   }
 

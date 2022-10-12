@@ -170,7 +170,7 @@
     margin: 10px 0;
   }
 
-  .nav {
+  .header-bottom__nav {
     position: fixed;
     left: 0;
     top: 0;
@@ -250,7 +250,7 @@
     transition: transform 0.3s ease;
   }
 
-  .nav.open {
+  .header-bottom__nav.open {
     transform: translateX(0);
     transition: transform 0.3s ease;
   }
