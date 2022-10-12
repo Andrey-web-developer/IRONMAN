@@ -885,6 +885,10 @@
 
 @media (min-width : 991.98px) {
 
+  .dropdown__list {
+    display: flex!important;
+  }
+
   .dropdown__list,
   .header-bottom__sub-list {
     visibility: hidden;
