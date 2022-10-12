@@ -647,8 +647,8 @@
   }
 
   .advantages__container {
-    min-height: 765px;
-  }
+    min-height: auto;
+}
 
   .advantages__item {
     padding: 0;
@@ -662,6 +662,10 @@
   .advantages__item::before {
     display: none;
   }
+
+  .advantages__wrapper {
+    position: static;
+}
 
   .art-lab__wrapper>div:nth-child(1),
   .art-lab__wrapper>div:nth-child(2),
