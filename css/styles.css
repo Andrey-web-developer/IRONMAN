@@ -1164,7 +1164,7 @@ body {
 }
 
 .production__img {
-  transform: translate(60px, -85px);
+  transform: translate(40px, -85px);
 }
 
 .production__wrapper {
@@ -1209,26 +1209,44 @@ body {
   color: var(--color-accent);
 }
 
-.iron-quality__list--border {
+.iron-quality__wrapper {
+  padding: 0;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid var(--color-grey);
   border-bottom: 1px solid var(--color-grey);
+}
+
+.iron-quality__wrapper:nth-child(4),
+.iron-quality__wrapper:nth-child(8) {
+  border-right: none;
+}
+
+.iron-quality__wrapper:nth-child(5),
+.iron-quality__wrapper:nth-child(6),
+.iron-quality__wrapper:nth-child(7),
+.iron-quality__wrapper:nth-child(8) {
+  border-bottom: none;
 }
 
 .iron-quality__item {
   position: relative;
-  height: 250px;
-}
-
-.iron-quality__item:not(:last-child) {
-  border-right: 1px solid var(--color-grey);
-}
-
-.iron-quality__item svg {
-  margin: auto 0;
+  height: 100%;
 }
 
 .iron-quality__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
   color: #52AEFB;
   transition: color 0.3s ease-in-out;
+}
+
+.iron-quality__link svg {
+  margin-top: auto;
 }
 
 .iron-quality__link:hover {
@@ -1262,6 +1280,7 @@ body {
 
 .iron-quality__card-title {
   margin: 0;
+  margin-top: auto;
   padding-bottom: 40px;
   font-size: 20px;
   font-weight: 400;
@@ -1352,7 +1371,7 @@ body {
   position: absolute;
   left: 100px;
   bottom: -225px;
-  width: 100%;
+  width: 420px;
   height: 100%;
   background-image: url(../images/production/chocolate.png);
   background-repeat: no-repeat;
