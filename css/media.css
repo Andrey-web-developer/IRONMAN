@@ -160,6 +160,11 @@
     font-size: 12px;
   }
 
+  .filter-products__text {
+    font-size: 15px;
+  }
+
+
 }
 
 /* md <= Large (lg) */
@@ -170,7 +175,8 @@
     margin: 10px 0;
   }
 
-  .header-bottom__nav {
+  .header-bottom__nav,
+  .catalog__filter {
     position: fixed;
     left: 0;
     top: 0;
@@ -212,6 +218,10 @@
     border-bottom: 1px solid var(--color-grey);
   }
 
+  .header-bottom__item:last-child .header-bottom__link {
+    border-bottom: none;
+  }
+
   .header-bottom__link {
     color: var(--color-accent);
     font-size: 20px;
@@ -236,12 +246,14 @@
     transition: transform 0.3s ease;
   }
 
-  .header-bottom__list.transformation {
+  .header-bottom__list.transformation,
+  .catalog__filter.transformation {
     transform: translateX(-100%);
     transition: transform 0.3s ease;
   }
 
-  .header-bottom__sub-list.transformation {
+  .header-bottom__sub-list.transformation,
+  .catalog__filter.transformation {
     opacity: 1;
     visibility: visible;
     display: block;
@@ -299,8 +311,8 @@
     height: 325px;
   }
 
-  .news__list .col-lg-3:first-child,
-  .news__list .col-lg-3:nth-child(2) {
+  .news__inner:first-child,
+  .news__inner:nth-child(2) {
     margin-bottom: 30px;
   }
 
@@ -327,6 +339,10 @@
 
   .cards__img-link {
     height: 300px;
+  }
+
+  .cards__sale {
+    font-size: 22px;
   }
 
   .products {
@@ -401,6 +417,29 @@
     margin-top: 20px;
   }
 
+  .catalog {
+    padding-top: 20px;
+  }
+
+  .catalog__wrapper {
+    padding-bottom: 10px;
+  }
+
+  .catalog__filter.transformation {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--color-bg-section);
+  }
+
+  .filter-products__show-more,
+  .filter-products__apply {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 45px;
+    padding-left: 45px;
+    width: auto;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -417,8 +456,9 @@
     width: 100%;
   }
 
-  .swiper1 {
-    padding-bottom: 50px;
+  .swiper1,
+  .swiper2 {
+    padding-bottom: 35px;
   }
 
   .swiper1 .swiper-slide--bg {
@@ -433,6 +473,11 @@
 
   .swiper1 .swiper-slide__title span {
     font-size: 25px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
   }
 
   .advantages {
@@ -584,6 +629,12 @@
     font-size: 14px;
   }
 
+  .catalog__count {
+    margin-right: 15px;
+    font-weight: 400;
+    text-transform: none;
+  }
+
 }
 
 /* xs <= Small (sm) */
@@ -692,6 +743,14 @@
     margin-bottom: 10px;
   }
 
+  .news__inner {
+    flex-basis: 475px;
+  }
+
+  .news__inner:nth-child(3) {
+    margin-bottom: 30px;
+  }
+
   .news__img img {
     object-position: top;
   }
@@ -717,7 +776,7 @@
 
   .products__title {
     margin-bottom: 30px;
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .cards__img-link {
@@ -870,6 +929,16 @@
 
   .accessories-list__text {
     font-size: 18px;
+  }
+
+  .catalog__count,
+  .catalog__button-filter,
+  .catalog__form-drop {
+    margin-bottom: 5px;
+  }
+
+  .catalog__form-drop {
+    margin-left: auto;
   }
 
 }
