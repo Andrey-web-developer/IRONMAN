@@ -962,6 +962,10 @@
     opacity: 1;
   }
 
+  .header-bottom__link--drop {
+    cursor: default;
+  }
+
   .header-bottom__item svg {
     transition: transform 0.3s ease;
   }

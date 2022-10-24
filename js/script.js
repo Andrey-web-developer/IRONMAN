@@ -86,7 +86,7 @@ function sidePanel() {
       unlockScroll();
     });
 
-    menu.addEventListener('click', (event) => {
+    menu.addEventListener('click', event => {
       if (event.target.classList.contains('header-bottom__link--drop')) {
         event.preventDefault();
         event.target.closest('.header-bottom__list').classList.add('transformation');
@@ -146,7 +146,7 @@ function checkboxShowMore() {
     const checkboxLength = document.querySelector('.filter-products__list--show-more').children.length;
     let checkboxItems = 8;
 
-    buttonShowMore.addEventListener('click', (event) => {
+    buttonShowMore.addEventListener('click', event => {
       event.preventDefault();
 
       checkboxItems += 11;
