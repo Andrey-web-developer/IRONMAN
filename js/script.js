@@ -4,6 +4,8 @@ swiper();
 function swiper() {
   const sliderIndex1 = document.querySelector('.swiper1');
   const sliderIndex2 = document.querySelector('.swiper2');
+  const sliderProductPreview = document.querySelector('.swiper__thumbs');
+  const sliderProductImages = document.querySelector('.swiper__images');
 
   if (sliderIndex1) {
     const swiper1 = new Swiper(sliderIndex1, {
@@ -38,6 +40,28 @@ function swiper() {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+      },
+    });
+  }
+
+  if (sliderProductPreview && sliderProductImages) {
+
+    const sliderThumbs = new Swiper(sliderProductPreview, {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    });
+
+    const sliderImages = new Swiper(sliderProductImages, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      mousewheel: true,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      thumbs: {
+        swiper: sliderThumbs,
       },
     });
   }
@@ -159,6 +183,89 @@ function checkboxShowMore() {
       if (visibleItems.length === checkboxLength) {
         buttonShowMore.style.display = 'none';
       }
+    });
+  }
+}
+
+// Счетчик товара (stepper)
+countProduct();
+function countProduct() {
+  const stepper = document.querySelector('.stepper__wrapper');
+  const stepperInput = document.querySelector('.stepper__input');
+  const stepperButtonUp = document.querySelector('.stepper__button--up');
+  const stepperButtonDown = document.querySelector('.stepper__button--down');
+
+  if (stepper) {
+    let count = stepperInput.value;
+
+    const buttonDisabled = () => {
+      if (count == 1) {
+        stepperButtonDown.classList.add('stepper__button--disabled');
+      } else {
+        stepperButtonDown.classList.remove('stepper__button--disabled');
+      }
+    };
+
+    const allowNumbersOnly = event => {
+      let code = (event.which) ? event.which : event.keyCode;
+
+      if (code > 31 && (code < 48 || code > 57)) {
+        event.preventDefault();
+      }
+    };
+
+    stepperInput.addEventListener('keyup', (event) => {
+      let self = event.currentTarget;
+
+      if (self.value == '0') {
+        self.value = 1;
+      }
+
+      self.style.width = `${self.value.length + 1}ex`;
+
+      count = stepperInput.value;
+
+      buttonDisabled();
+    });
+
+    stepperInput.addEventListener('keypress', (event) => {
+      allowNumbersOnly(event);
+    });
+
+    stepperInput.addEventListener('change', (event) => {
+      let self = event.currentTarget;
+
+      if (!self.value) {
+        self.value = 1;
+      }
+
+      count = stepperInput.value;
+
+      buttonDisabled();
+    });
+
+    stepperButtonUp.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      count++;
+
+      buttonDisabled();
+
+      stepperInput.value = count;
+
+      stepperInput.style.width = `${stepperInput.value.length + 1}ex`;
+    });
+
+    stepperButtonDown.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      count--;
+
+      buttonDisabled();
+
+      stepperInput.value = count;
+
+      stepperInput.style.width = `${stepperInput.value.length + 1}ex`;
     });
   }
 }

@@ -154,6 +154,13 @@ body {
   overflow: hidden;
 }
 
+.sports-food,
+.accessories,
+.catalog,
+.product-card {
+  background-color: var(--color-bg-section);
+}
+
 /* -- СИСТЕМНЫЕ СВОЙСТВА-END -- */
 /* -- HEADER-START -- */
 .header {
@@ -1757,7 +1764,6 @@ body {
 .accessories {
   padding-top: 35px;
   padding-bottom: 165px;
-  background-color: var(--color-bg-section);
 }
 
 .accessories {
@@ -1853,7 +1859,6 @@ body {
 
 .catalog {
   padding-top: 50px;
-  background-color: var(--color-bg-section);
 }
 
 .filter-products__list:not(:last-child) {
@@ -1926,16 +1931,16 @@ body {
   opacity: 0;
 }
 
-.filter-products__checkbox:checked + .filter-products__text {
+.filter-products__checkbox:checked+.filter-products__text {
   font-weight: 700;
   color: var(--color-blue);
 }
 
-.filter-products__checkbox:checked + .filter-products__text::before {
+.filter-products__checkbox:checked+.filter-products__text::before {
   border-color: var(--color-blue);
 }
 
-.filter-products__checkbox:checked + .filter-products__text::after {
+.filter-products__checkbox:checked+.filter-products__text::after {
   opacity: 1;
 }
 
@@ -1947,11 +1952,15 @@ body {
 
 
 .filter-products__label,
-.filter-products__checkbox {
+.filter-products__checkbox,
+.product-card__radio-text,
+.product-card__radio {
   cursor: pointer;
 }
 
-.filter-products__checkbox {
+.filter-products__checkbox,
+.product-card__radio,
+.product-card__rating-radio {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -2032,4 +2041,307 @@ body {
   border-color: var(--color-grey);
   box-shadow: none;
 }
+
 /* -- CATALOG-END --  */
+/* -- PRODUCT-PAGE-START --  */
+.product-card {
+  padding-top: 35px;
+  padding-bottom: 170px;
+}
+
+.product-card__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 45px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.product-card__container {
+  margin-bottom: 35px;
+}
+
+.swiper__images {
+  margin-bottom: 25px;
+}
+
+.swiper-slide__card-inner {
+  position: relative;
+  padding: 20px;
+  height: 574px;
+  background-color: var(--color-light);
+  border-radius: 10px;
+}
+
+.swiper-slide__zoom {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.swiper-slide__zoom svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-slide__card-inner-thumbs {
+  height: auto;
+  cursor: pointer;
+}
+
+.swiper-slide__card-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-card__form {
+  margin-bottom: 50px;
+}
+
+.product-card__radio-list {
+  margin-bottom: 12px;
+}
+
+.product-card__radio-title,
+.stepper__title,
+.product-card__rating-title {
+  margin: 0;
+  margin-bottom: 17px;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.product-card__radio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+.product-card__radio-label {
+  margin-bottom: 30px;
+}
+
+.product-card__radio-label:not(:last-child) {
+  margin-right: 8px;
+}
+
+.product-card__radio:checked+.product-card__radio-text {
+  color: var(--color-light);
+  background-color: var(--color-blue);
+}
+
+.product-card__radio-text {
+  padding: 0.75em 1.25em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background-color: var(--color-grey);
+  border-radius: 5px;
+}
+
+.product-card__wrapper {
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid var(--color-blue);
+}
+
+.product-card__stepper {
+  margin-right: 50px;
+}
+
+.stepper__title {
+  margin-bottom: 5px;
+}
+
+.stepper__wrapper {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 44px;
+  user-select: none;
+}
+
+.stepper__label {
+  padding-left: 25px;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-grey);
+  border-radius: 5px;
+  background-color: var(--color-light);
+  overflow: hidden;
+}
+
+.stepper__input,
+.stepper__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.stepper__input {
+  width: 10px;
+  height: 100%;
+  font-weight: 400;
+  outline: none;
+  min-width: 2ex;
+}
+
+.stepper__buttons {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stepper__button {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-accent);
+  background-color: var(--color-grey);
+  fill: currentColor;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.stepper__button:hover {
+  color: var(--color-light);
+  background-color: var(--color-blue);
+}
+
+.stepper__button--up {
+  margin-bottom: 4px;
+}
+
+.stepper__button--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.product-card__rating-title {
+  margin-bottom: 15px;
+}
+
+.product-card__rating-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 0;
+}
+
+.product-card__rating-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/product-page/star.svg');
+  background-repeat: no-repeat;
+}
+
+.product-card__rating-label:not(:last-child) {
+  margin-right: 5px;
+}
+
+.product-card__reviews {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: var(--color-blue);
+}
+
+.product-card__reviews:hover {
+  color: var(--color-blue);
+}
+
+.product-card__price {
+  margin-bottom: 15px;
+  display: inline-block;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.product-card__add-basket {
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card__add-basket svg {
+  margin-right: 10px;
+  stroke: currentColor;
+}
+
+.product-card__tab .nav-tabs {
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.product-card__tab .tab__wrapper {
+  margin-bottom: 20px;
+}
+
+.product-card__tab .nav-tabs .nav-link {
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.product-card__tab .nav-link.active {
+  background-color: inherit;
+}
+
+.product-card__tab .tab__text {
+  font-size: 16px;
+}
+
+.product-card__tab .tab__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.product-card__title-products {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.product-card .cards__list {
+  margin-bottom: 0;
+}
+/* -- PRODUCT-PAGE-END --  */
