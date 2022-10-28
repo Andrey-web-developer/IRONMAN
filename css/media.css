@@ -194,6 +194,10 @@
     transform: translateX(-420px);
   }
 
+  .where-buy__map-wrapper {
+    height: 600px;
+  }
+
 }
 
 /* md <= Large (lg) */
@@ -473,6 +477,10 @@
   .product-card {
     padding-bottom: 30px;
   }
+
+  .where-buy__content-title {
+    font-size: 25px;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -688,6 +696,10 @@
   .product-card__tab {
     width: auto;
     transform: translateX(0);
+  }
+
+  .where-buy {
+    padding-bottom: 50px;
   }
 
 }
@@ -1015,6 +1027,27 @@
   
   .product-card__title-products {
     font-size: 22px;
+  }
+
+  .where-buy {
+    padding-top: 10px;
+  }
+
+  .where-buy__title {
+    font-size: 50px;
+  }
+
+  .where-buy__subtitle,
+  .where-buy__content-title {
+    font-size: 24px;
+  }
+
+  .where-buy__item {
+    height: 20vw;
+  }
+
+  .where-buy__map-wrapper {
+    height: 90vw;
   }
 
 }

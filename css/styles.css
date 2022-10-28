@@ -157,7 +157,8 @@ body {
 .sports-food,
 .accessories,
 .catalog,
-.product-card {
+.product-card,
+.where-buy {
   background-color: var(--color-bg-section);
 }
 
@@ -1590,7 +1591,8 @@ body {
   color: var(--color-accent);
 }
 
-.tab__title::before {
+.tab__title::before,
+.where-buy__content-title::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1599,7 +1601,8 @@ body {
   border-bottom: 1px solid var(--color-grey);
 }
 
-.tab__title::after {
+.tab__title::after,
+.where-buy__content-title::after {
   content: '';
   position: absolute;
   left: 0;
@@ -2344,4 +2347,92 @@ body {
 .product-card .cards__list {
   margin-bottom: 0;
 }
+
 /* -- PRODUCT-PAGE-END --  */
+/* -- WHERE-BUY--START --  */
+.where-buy {
+  padding-top: 35px;
+  padding-bottom: 170px;
+}
+
+.where-buy__title,
+.where-buy__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.where-buy__subtitle {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.where-buy__content-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--color-accent);
+}
+
+.where-buy__content-title::before {
+  top: 6.5px;
+  bottom: auto;
+}
+
+.where-buy__content-title::after {
+  top: 0;
+
+}
+
+.where-buy__item {
+  margin-bottom: 24px;
+  height: 100px;
+}
+
+.where-buy__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-light);
+  border: 1px solid var(--color-grey);
+  border-radius: 10px;
+}
+
+.where-buy__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.where-buy__img {
+  width: 70%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.where-buy__map-wrapper {
+  padding: 15px;
+  height: 775px;
+  background-color: var(--color-light);
+  border: 1px solid var(--color-grey);
+  border-radius: 10px;
+}
+
+.where-buy__map {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* -- WHERE-BUY-END --  */
