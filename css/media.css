@@ -478,8 +478,17 @@
     padding-bottom: 30px;
   }
 
+  .where-buy,
+  .communication {
+    padding-bottom: 50px;
+  }
+
   .where-buy__content-title {
     font-size: 25px;
+  }
+
+  .communication__links {
+    margin-bottom: 60px;
   }
 }
 
@@ -696,10 +705,6 @@
   .product-card__tab {
     width: auto;
     transform: translateX(0);
-  }
-
-  .where-buy {
-    padding-bottom: 50px;
   }
 
 }
@@ -1029,11 +1034,13 @@
     font-size: 22px;
   }
 
-  .where-buy {
+  .where-buy,
+  .communication {
     padding-top: 10px;
   }
 
-  .where-buy__title {
+  .where-buy__title,
+  .communication__title {
     font-size: 50px;
   }
 
@@ -1048,6 +1055,25 @@
 
   .where-buy__map-wrapper {
     height: 90vw;
+  }
+
+  .communication__content {
+    margin-bottom: 30px;
+  }
+
+  .communication__text,
+  .communication__download,
+  .form__title--contacts {
+    font-size: 16px;
+  }
+
+  .form__captcha {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__button {
+    align-self: center;
   }
 
 }
