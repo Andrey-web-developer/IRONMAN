@@ -159,7 +159,8 @@ body {
 .catalog,
 .product-card,
 .where-buy,
-.communication {
+.communication,
+.wholesalers {
   background-color: var(--color-bg-section);
 }
 
@@ -174,6 +175,7 @@ body {
 
 .form__title {
   margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.3;
@@ -182,6 +184,7 @@ body {
 
 .form__input {
   padding-bottom: 15px;
+  padding-left: 5px;
   border-bottom: 1px solid var(--color-blue);
 }
 
@@ -202,6 +205,7 @@ body {
 }
 
 .form__captcha {
+  margin-bottom: 35px;
   display: flex;
 }
 
@@ -214,8 +218,6 @@ body {
 }
 
 .form__button {
-  margin-top: 35px;
-  margin-bottom: 20px;
   width: 200px;
   height: 42px;
   align-self: flex-start;
@@ -1653,7 +1655,8 @@ body {
 .tab__title::before,
 .where-buy__content-title::before,
 .communication__content::before,
-.communication__form::before {
+.communication__form::before,
+.wholesalers__form::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1665,7 +1668,8 @@ body {
 .tab__title::after,
 .where-buy__content-title::after,
 .communication__content::after,
-.communication__form::after {
+.communication__form::after,
+.wholesalers__form::after {
   content: '';
   position: absolute;
   left: 0;
@@ -2414,7 +2418,8 @@ body {
 /* -- PRODUCT-PAGE-END --  */
 /* -- WHERE-BUY--START --  */
 .where-buy,
-.communication {
+.communication,
+.wholesalers {
   padding-top: 35px;
 }
 
@@ -2424,7 +2429,8 @@ body {
 
 .where-buy__title,
 .where-buy__subtitle,
-.communication__title {
+.communication__title,
+.wholesalers__title {
   margin: 0;
   margin-bottom: 20px;
   font-family: 'Bebas Neue Pro';
@@ -2443,7 +2449,8 @@ body {
 
 .where-buy__content-title,
 .communication__content,
-.communication__form {
+.communication__form,
+.wholesalers__form {
   position: relative;
   padding-top: 50px;
 }
@@ -2459,14 +2466,16 @@ body {
 
 .where-buy__content-title::before,
 .communication__content::before,
-.communication__form::before {
+.communication__form::before,
+.wholesalers__form::before {
   top: 6.5px;
   bottom: auto;
 }
 
 .where-buy__content-title::after,
 .communication__content::after,
-.communication__form::after {
+.communication__form::after,
+.wholesalers__form::after {
   top: 0;
 }
 
@@ -2521,13 +2530,15 @@ body {
   margin-bottom: 60px;
 }
 
-.communication__inner:not(:last-child) {
+.communication__inner:not(:last-child),
+.wholesalers__inner:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .communication__text,
 .communication__download,
-.form__title--contacts {
+.form__title--contacts,
+.wholesalers__text {
   margin: 0;
   font-weight: 400;
   font-size: 20px;
@@ -2554,8 +2565,25 @@ body {
 .form__title--contacts {
   margin-bottom: 30px;
 }
-
-
-
-
 /* -- CONTACTS-END --  */
+/* -- WHOLESALERS-START --  */
+
+.wholesalers {
+  padding-bottom: 170px;
+}
+
+.wholesalers__form {
+  margin-bottom: 20px;
+}
+
+.wholesalers__text--bold {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/* -- WHOLESALERS-END --  */
