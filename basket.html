@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Спортивное питание</title>
+  <title>Корзина</title>
   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/swiper.js/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -97,7 +98,7 @@
               </a>
             </li>
             <li class="header-top__group-item">
-              <a class="header-top__group-link" href="basket.html">
+              <a class="header-top__group-link" href="#">
                 <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M21.9916 6.98082H2.86903L1 25H23.8561L21.9916 6.98082Z" stroke-miterlimit="10" />
                   <path
@@ -208,9 +209,12 @@
                     <li class="header-bottom__sub-item"><a href="#" class="header-bottom__sub-link">форум</a></li>
                   </ul>
                 </li>
-                <li class="header-bottom__item d-lg-none"><a href="rules.html" class="header-bottom__link">доставка</a></li>
-                <li class="header-bottom__item d-lg-none"><a href="wholesalers.html" class="header-bottom__link">оптовикам</a></li>
-                <li class="header-bottom__item d-lg-none"><a href="contacts.html" class="header-bottom__link">контакты</a></li>
+                <li class="header-bottom__item d-lg-none"><a href="rules.html" class="header-bottom__link">доставка</a>
+                </li>
+                <li class="header-bottom__item d-lg-none"><a href="wholesalers.html"
+                    class="header-bottom__link">оптовикам</a></li>
+                <li class="header-bottom__item d-lg-none"><a href="contacts.html"
+                    class="header-bottom__link">контакты</a></li>
               </ul>
             </nav>
             <button class="burger btn-reset" aria-label="Открыть меню">
@@ -222,150 +226,202 @@
     </div>
   </header>
   <main>
-    <section class="sports-food">
+    <section class="basket">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <h1 class="sports-food__title">спортивное питание</h1>
+          <h1 class="col basket__title">Корзина</h1>
+        </div>
+        <div class="row justify-content-between basket__container">
+          <div class="col-5 xxl-4 d-flex">
+            <h2 class="basket__subtitle">Минимальная сумма заказа 2000&nbsp;₽</h2>
           </div>
-          <ul class="row sports-list list-reset">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/proteins.png" alt="Протеины">
-                  <h2 class="sports-list__title">протеины</h2>
-                </a>
+          <div class="col-7 col-xxl-5">
+            <p class="basket__promo-code">Если у&nbsp;Вас есть купон на&nbsp;скидку, введите кодовое слово в&nbsp;поле
+              ниже</p>
+            <form action="#" class="basket__form form">
+              <input type="text" aria-label="Введите промокод" placeholder="Промокод"
+                class="form__input basket__input input-reset">
+              <button class="basket__promo-button button btn-reset">Применить</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col basket__wrapper">
+            <ul class="basket__title-list list-reset">
+              <li class="basket__title-item">
+                Наименование
               </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/gainers.png" alt="Гейнеры">
-                  <h2 class="sports-list__title">гейнеры</h2>
-                </a>
+              <div class="col-7 basket__inner basket__inner--title">
+                <li class="col-3 basket__title-item">
+                  Цена
+                  <span>Без скидки</span>
+                </li>
+                <li class="col-3 basket__title-item">
+                  Цена
+                  <span>С учетом скидки</span>
+                </li>
+                <li class="col-3 basket__title-item">
+                  Кол-во
+                  <span>Шт.</span>
+                </li>
+                <li class="col-2 basket__title-item">
+                  Вес
+                  <span>Кг</span>
+                </li>
+                <li class="col-auto basket__title-item">
+                  Сумма
+                  <span>Руб.</span>
+                </li>
+              </div>
+            </ul>
+            <ul class="basket__list list-reset">
+              <li class="basket__item">
+                <ul class="basket__content-list list-reset">
+                  <li class="basket__content-item">
+                    <a href="product-page.html" class="col-4 basket__content-link">
+                      <div class="basket__content-img">
+                        <img src="images/basket/product.png" alt="Фото товара">
+                      </div>
+                      <span>IRONMAN F-80 (Формула 80) (500 гр) шоколад</span>
+                    </a>
+                    <div class="col-7 basket__inner">
+                      <span class="col-3 basket__content-numbers">680</span>
+                      <span class="col-3 basket__content-numbers basket__content-numbers--bold">600</span>
+                      <div class="col-3">
+                        <div class="stepper__wrapper">
+                          <label class="stepper__label">
+                            <input type="text" value="1" maxlength="3" class="stepper__input input-reset">
+                            <span class="stepper__text">шт.</span>
+                          </label>
+                          <div class="stepper__buttons">
+                            <button class="stepper__button stepper__button--up btn-reset"
+                              aria-label="Увеличить количество">
+                              <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="4" width="10" height="2" rx="1" />
+                                <rect x="4" y="10" width="10" height="2" rx="1" transform="rotate(-90 4 10)" />
+                              </svg>
+                            </button>
+                            <button class="stepper__button stepper__button--down stepper__button--disabled btn-reset"
+                              aria-label="Уменьшить количество">
+                              <svg width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="10" height="2" rx="1" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="col-2 basket__content-numbers">0,5</span>
+                      <span class="col-auto basket__content-numbers">600</span>
+                    </div>
+                  </li>
+                  <li class="basket__content-item">
+                    <a href="product-page.html" class="col-4 basket__content-link">
+                      <div class="basket__content-img">
+                        <img src="images/basket/product.png" alt="Фото товара">
+                      </div>
+                      <span>IRONMAN F-80 (Формула 80) (500 гр) шоколад</span>
+                    </a>
+                    <div class="col-7 basket__inner">
+                      <span class="col-3 basket__content-numbers">680</span>
+                      <span class="col-3 basket__content-numbers basket__content-numbers--bold">600</span>
+                      <div class="col-3">
+                        <div class="stepper__wrapper">
+                          <label class="stepper__label">
+                            <input type="text" value="1" maxlength="3" class="stepper__input input-reset">
+                            <span class="stepper__text">шт.</span>
+                          </label>
+                          <div class="stepper__buttons">
+                            <button class="stepper__button stepper__button--up btn-reset"
+                              aria-label="Увеличить количество">
+                              <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="4" width="10" height="2" rx="1" />
+                                <rect x="4" y="10" width="10" height="2" rx="1" transform="rotate(-90 4 10)" />
+                              </svg>
+                            </button>
+                            <button class="stepper__button stepper__button--down stepper__button--disabled btn-reset"
+                              aria-label="Уменьшить количество">
+                              <svg width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="10" height="2" rx="1" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="col-2 basket__content-numbers">0,5</span>
+                      <span class="col-auto basket__content-numbers">600</span>
+                    </div>
+                  </li>
+                  <li class="basket__content-item">
+                    <a href="product-page.html" class="col-4 basket__content-link">
+                      <div class="basket__content-img">
+                        <img src="images/basket/product.png" alt="Фото товара">
+                      </div>
+                      <span>IRONMAN F-80 (Формула 80) (500 гр) шоколад</span>
+                    </a>
+                    <div class="col-7 basket__inner">
+                      <span class="col-3 basket__content-numbers">680</span>
+                      <span class="col-3 basket__content-numbers basket__content-numbers--bold">600</span>
+                      <div class="col-3">
+                        <div class="stepper__wrapper">
+                          <label class="stepper__label">
+                            <input type="text" value="1" maxlength="3" class="stepper__input input-reset">
+                            <span class="stepper__text">шт.</span>
+                          </label>
+                          <div class="stepper__buttons">
+                            <button class="stepper__button stepper__button--up btn-reset"
+                              aria-label="Увеличить количество">
+                              <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="4" width="10" height="2" rx="1" />
+                                <rect x="4" y="10" width="10" height="2" rx="1" transform="rotate(-90 4 10)" />
+                              </svg>
+                            </button>
+                            <button class="stepper__button stepper__button--down stepper__button--disabled btn-reset"
+                              aria-label="Уменьшить количество">
+                              <svg width="10" height="2" viewBox="0 0 10 2" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="10" height="2" rx="1" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="col-2 basket__content-numbers">0,5</span>
+                      <span class="col-auto basket__content-numbers">600</span>
+                    </div>
+                  </li>
+                </ul>
               </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/ampoules-and-shots.png" alt="Ампулы и шоты">
-                  <h2 class="sports-list__title">ампулы и шоты</h2>
-                </a>
+            </ul>
+            <ul class="justify-content-end basket__title-list list-reset">
+              <div class="col-7 justify-content-end basket__inner">
+                <li class="col-3 basket__title-item">
+                  Кол-во
+                  <span>Шт.</span>
+                </li>
+                <li class="col-2 basket__title-item">
+                  Вес
+                  <span>Кг</span>
+                </li>
+                <li class="col-auto basket__title-item">
+                  Сумма
+                  <span>Руб.</span>
+                </li>
+              </div>
+            </ul>
+            <ul class="basket__list basket__title-list--total list-reset">
+              <li class="basket__title-item">
+                Итого
               </li>
+              <div class="col-7 justify-content-end basket__inner">
+                <li class="col-3 basket__title-item">3</li>
+                <li class="col-2 basket__title-item">1,5</li>
+                <li class="col-auto basket__title-item">1800</li>
+              </div>
+            </ul>
+            <div class="basket__buttons">
+              <button class="basket__button-reset button btn-reset">Очистить</button>
+              <button class="basket__button-submit button btn-reset">Оформить заказ</button>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/energy.png" alt="Энергетики">
-                  <h2 class="sports-list__title">энергетики</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/bars.png" alt="Батончики">
-                  <h2 class="sports-list__title">батончики</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/showbox-bars.png" alt="Батончики шоубокс">
-                  <h2 class="sports-list__title">батончики шоубокс</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/l-carnitine.png" alt="L-карнитин">
-                  <h2 class="sports-list__title">L-карнитин</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/burners.png" alt="Сжигатели">
-                  <h2 class="sports-list__title">сжигатели</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/drinks.png" alt="Напитки">
-                  <h2 class="sports-list__title">напитки</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/drinks-packaging.png" alt="Напитки упаковка">
-                  <h2 class="sports-list__title">напитки упаковка</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/vitamins.png" alt="Витамины">
-                  <h2 class="sports-list__title">витамины</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/food-substitutes.png" alt="Заменители питания">
-                  <h2 class="sports-list__title">заменители питания</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/for-joints.png" alt="Для суставов">
-                  <h2 class="sports-list__title">для суставов</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/amino-acids.png" alt="Аминокислоты">
-                  <h2 class="sports-list__title">аминокислоты</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/anabolic-formulas.png" alt="Анаболические формулы">
-                  <h2 class="sports-list__title">анаболические формулы</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/creatinine.png" alt="Креатинин">
-                  <h2 class="sports-list__title">креатинин</h2>
-                </a>
-              </li>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <li class="sports-list__item">
-                <a href="#" class="sports-list__link">
-                  <img src="images/sports-food/therapeutic-nutrition.png" alt="Лечебное питание и бады">
-                  <h2 class="sports-list__title">лечебное питание и бады</h2>
-                </a>
-              </li>
-            </div>
-          </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -464,8 +520,7 @@
           <ul class="d-flex footer__social-list list-reset">
             <li class="footer__social-item">
               <a href="#" target="_blank" aria-label="Vk" class="footer__social-link footer__social-link--vk">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="18" height="13"
-                  viewBox="0 0 512 512">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 512 512">
                   <path
                     d="M213.5 140.6c-1.1.2-4.5.9-7.5 1.5-7.3 1.5-12 4-15.9 8.4-3.4 3.9-3.3 5.5.2 5.5 3 .1 10.7 3.6 13.5 6.3 6.3 5.8 8.2 14.2 8.9 38.8 1.7 58.9-11.6 68.9-38.4 28.9-13-19.5-23.3-38.5-33.7-62-8.3-18.7-7-18.2-49.8-17.8-31.4.3-32.8.4-35.5 2.4-4.9 3.6-4.4 7.9 2.7 23.5 15.8 34.8 37.9 75 57.5 104.4 34.3 51.5 64.1 75.9 106.4 87.3 8.7 2.3 11.8 2.6 33.2 3 19.5.3 24.2.1 27.2-1.1 5.5-2.3 7.3-6.2 8.1-17 1.2-16.8 4.6-27 10.8-32.2 2.7-2.3 3.9-2.6 7.9-2.3 6.7.7 12.1 5 26.6 21.3 14.8 16.7 23.5 24.5 32.3 28.8l6.5 3.2H410c38.7 0 40.3-.2 46.6-5.7 2.9-2.6 3.4-3.6 3.4-7.4 0-10.2-10.6-24.3-40.2-53.8-24.9-24.7-27.5-28.3-26.3-35.6 1-5.7 5.9-13.3 23.6-36.5 31.1-40.6 42.9-60.7 42.9-73 0-4.9-1.7-6.8-7.5-8.4-4.6-1.2-26.7-1.4-59.9-.4-27.1.8-24.9-.4-32.6 17.6-17.1 39.8-41.5 77.4-54.4 83.7-4.2 2-4.6 2-7.6.5-2-1.1-3.9-3.3-5.3-6.3-2.1-4.6-2.2-5.7-2.2-47.2 0-46.4-.2-47.9-5.6-52.4-6.1-5.2-11-5.9-41.4-6.2-15.4-.1-28.9-.1-30 .2z" />
                 </svg>
