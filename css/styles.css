@@ -111,7 +111,8 @@ body {
 .footer__link,
 .contacts__link--footer svg,
 .footer__social-link,
-.cards__title {
+.cards__title,
+.breadcrumb-item a {
   transition: color 0.3s ease;
 }
 
@@ -124,7 +125,8 @@ body {
 .footer__link:hover,
 .contacts__link--footer:hover svg,
 .footer__social-link:hover,
-.cards__title-link:hover .cards__title {
+.cards__title-link:hover .cards__title,
+.breadcrumb-item a:hover {
   color: var(--color-blue);
 }
 
