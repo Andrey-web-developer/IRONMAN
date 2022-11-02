@@ -162,7 +162,8 @@ body {
 .communication,
 .wholesalers,
 .authorization,
-.basket {
+.basket,
+.wholesalers-account {
   background-color: var(--color-bg-section);
 }
 
@@ -228,6 +229,16 @@ body {
   height: 42px;
   align-self: flex-start;
   font-size: 18px;
+}
+
+.form__button--close {
+  background-color: var(--color-grey);
+  border: none;
+}
+
+.form__button--close:hover {
+  background-color: var(--color-grey);
+  color: var(--color-light);
 }
 
 /* -- СИСТЕМНЫЕ СВОЙСТВА-END -- */
@@ -1665,7 +1676,8 @@ body {
 .communication__form::before,
 .wholesalers__form::before,
 .authorization__form::before,
-.basket__container::before {
+.basket__container::before,
+.wholesalers-account__title::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1680,7 +1692,8 @@ body {
 .communication__form::after,
 .wholesalers__form::after,
 .authorization__form::after,
-.basket__container::after {
+.basket__container::after,
+.wholesalers-account__title::after {
   content: '';
   position: absolute;
   left: 0;
@@ -2432,12 +2445,14 @@ body {
 .where-buy,
 .communication,
 .wholesalers,
-.authorization {
+.authorization,
+.wholesalers-account {
   padding-top: 35px;
 }
 
 .where-buy,
-.authorization {
+.authorization,
+.wholesalers-account {
   padding-bottom: 170px;
 }
 
@@ -2446,7 +2461,8 @@ body {
 .communication__title,
 .wholesalers__title,
 .authorization__title,
-.basket__title {
+.basket__title,
+.wholesalers-account__title {
   margin: 0;
   margin-bottom: 20px;
   font-family: 'Bebas Neue Pro';
@@ -2680,7 +2696,8 @@ body {
 /* -- AUTHORIZATION-END --  */
 /* -- BASKET-START --  */
 
-.basket__container {
+.basket__container,
+.wholesalers-account__title {
   position: relative;
   margin-bottom: 35px;
   padding-bottom: 35px;
@@ -2828,4 +2845,292 @@ body {
 .basket__button-submit {
   padding: 0.8em 5em;
 }
+
 /* -- BASKET-END --  */
+/* -- WHOLESALERS-ACCOUNT-START --  */
+
+.wholesalers-account__container {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.wholesalers-account__subtitle,
+.orders__title {
+  margin: 0;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--color-accent);
+}
+
+.wholesalers-account__change {
+  color: var(--color-blue);
+  transition: color 0.3s ease;
+}
+
+.wholesalers-account__change svg {
+  fill: currentColor;
+}
+
+.wholesalers-account__change:hover {
+  color: var(--color-grey);
+}
+
+.modal {
+  background-color: rgba(13, 43, 77, 0.8);
+}
+
+.modal-dialog {
+  margin-top: 5%;
+  max-width: 636px;
+}
+
+.modal-content {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 0;
+  border: none;
+}
+
+.modal-header {
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--color-light);
+}
+
+.modal-footer {
+  justify-content: flex-start;
+}
+
+.wholesalers-account__wrapper {
+  background: var(--color-light);
+  border: 1px solid var(--color-grey);
+  border-radius: 10px;
+}
+
+.wholesalers-account__inner {
+  padding: 20px;
+}
+
+.wholesalers-account__inner:not(:last-child),
+.wholesalers-account__content:not(:last-child) {
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.wholesalers-account__wrapper--border .wholesalers-account__inner:nth-child(n+10) {
+  border-bottom: none;
+}
+
+.wholesalers-account__inner-title,
+.wholesalers-account__inner-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--color-accent);
+}
+
+.wholesalers-account__inner-text {
+  font-weight: 700;
+}
+
+.wholesalers-account__content {
+  display: flex;
+
+}
+
+.wholesalers-account__content .wholesalers-account__inner {
+  border: none;
+}
+
+.wholesalers-account__inner.wholesalers-account__inner--border {
+  border-right: 1px solid var(--color-grey);
+}
+
+.wholesalers-account__sale {
+  padding: 20px;
+}
+
+.wholesalers-account__sale-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-accent);
+}
+
+.sale {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.sale__item {
+  width: 54px;
+}
+
+.sale__item:not(:first-child) {
+  margin-right: 10px;
+}
+
+.sale__item--active .sale__block {
+  background-color: var(--color-blue);
+}
+
+.sale__item--active~.sale__item {
+  opacity: 0.5;
+}
+
+.sale__block {
+  margin-bottom: 10px;
+  height: 210px;
+  background-color: var(--color-grey);
+  border-radius: 10px;
+}
+
+.sale__item:nth-child(2) .sale__block {
+  height: 200px;
+}
+
+.sale__item:nth-child(3) .sale__block {
+  height: 190px;
+}
+
+.sale__item:nth-child(4) .sale__block {
+  height: 180px;
+}
+
+.sale__item:nth-child(5) .sale__block {
+  height: 170px;
+}
+
+.sale__item:nth-child(6) .sale__block {
+  height: 160px;
+}
+
+.sale__item:nth-child(7) .sale__block {
+  height: 150px;
+}
+
+.sale__item:nth-child(8) .sale__block {
+  height: 140px;
+}
+
+.sale__item:nth-child(9) .sale__block {
+  height: 130px;
+}
+
+.sale__item:nth-child(10) .sale__block {
+  height: 120px;
+}
+
+.sale__item:nth-child(11) .sale__block {
+  height: 110px;
+}
+
+.sale__item:nth-child(12) .sale__block {
+  height: 100px;
+}
+
+.sale__item:nth-child(13) .sale__block {
+  height: 90px;
+}
+
+.sale__item:nth-child(14) .sale__block {
+  height: 80px;
+}
+
+.sale__item:nth-child(15) .sale__block {
+  height: 70px;
+}
+
+.sale__item:nth-child(16) .sale__block {
+  height: 60px;
+}
+
+.sale__item:nth-child(17) .sale__block {
+  height: 50px;
+}
+
+.sale__item:nth-child(18) .sale__block {
+  height: 40px;
+}
+
+.sale__item:nth-child(19) .sale__block {
+  height: 30px;
+}
+
+.sale__item:nth-child(20) .sale__block {
+  height: 20px;
+}
+
+.sale__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--color-accent);
+}
+
+.sale__text div {
+  font-weight: 700;
+}
+
+.wholesalers-account__sale-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--color-accent);
+}
+
+.orders {
+  padding: 20px 20px 0 20px;
+}
+
+.orders__wrapper {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.orders__titles,
+.orders__item {
+  display: flex;
+}
+
+.orders__title {
+  margin: 0;
+}
+
+.orders__item {
+  padding: 20px 0;
+}
+
+.orders__item:not(:last-child) {
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.orders__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--color-accent);
+}
+
+.orders__text--number {
+  color: var(--color-blue);
+}
+/* -- WHOLESALERS-ACCOUNT-END --  */

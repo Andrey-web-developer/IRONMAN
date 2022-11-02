@@ -210,6 +210,10 @@
     font-size: 27px;
   }
 
+  .sale__item:not(:first-child) {
+    margin-right: 3px;
+  }
+
 }
 
 /* md <= Large (lg) */
@@ -520,6 +524,22 @@
   .basket__input {
     width: 45%;
   }
+
+  .sale {
+    display: none;
+  }
+
+  .wholesalers-account__sale-title {
+    margin-bottom: 10px;
+  }
+
+  .wholesalers-account__sale-text {
+    font-size: 14px;
+  }
+
+  .orders__text {
+    font-size: 16px;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -653,7 +673,8 @@
     border-bottom: 1px solid var(--color-grey);
   }
 
-  .about {
+  .about,
+  .wholesalers-account {
     padding-bottom: 50px;
   }
 
@@ -739,6 +760,22 @@
 
   .wholesalers__title {
     font-size: 44px;
+  }
+
+  .wholesalers-account__title {
+    font-size: 50px;
+  }
+
+  .wholesalers-account__inner.wholesalers-account__inner--border {
+    border-right: none;
+  }
+
+  .wholesalers-account__wrapper--border .wholesalers-account__inner:nth-child(2n+1) {
+    border-right: 1px solid var(--color-grey);
+  }
+
+  .wholesalers-account__wrapper--border .wholesalers-account__inner:nth-child(10) {
+    border-bottom: 1px solid var(--color-grey);
   }
 
 }
@@ -1130,6 +1167,48 @@
 
   .authorization__wholesalers-link {
     font-size: 18px;
+  }
+
+  .wholesalers-account__title {
+    font-size: 40px;
+  }
+
+  .wholesalers-account__content {
+    flex-wrap: wrap;
+  }
+
+  .wholesalers-account__content:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .wholesalers-account__content .wholesalers-account__inner {
+    width: 100%;
+    border-bottom: 1px solid var(--color-grey);
+  }
+
+  .wholesalers-account__wrapper--border .wholesalers-account__inner:nth-child(2n+1) {
+    border-right: none;
+  }
+
+  .wholesalers-account__wrapper--border .wholesalers-account__inner:not(:last-child) {
+    border-bottom: 1px solid var(--color-grey);
+  }
+
+  .orders__title,
+  .orders__text {
+    font-size: 14px;
+  }
+
+  .modal-footer {
+    justify-content: center;
+  }
+
+  .modal-form .form__wrapper {
+    padding: 20px 10px;
+  }
+
+  .modal-form .form__input::placeholder {
+    font-size: 14px;
   }
 
 
