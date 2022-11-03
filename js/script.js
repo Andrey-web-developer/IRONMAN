@@ -1,5 +1,6 @@
 'use strict';
 
+// Слайдеры
 swiper();
 function swiper() {
   const sliderIndex1 = document.querySelector('.swiper1');
@@ -33,6 +34,7 @@ function swiper() {
       slidesPerView: 'auto',
       spaceBetween: 25,
       grabCursor: true,
+      mousewheel: true,
       autoHeight: true,
       loop: true,
       slideToClickedSlide: true,
