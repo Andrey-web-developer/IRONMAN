@@ -68,10 +68,13 @@
     padding: 0;
   }
 
-  .basket__title-list--total .basket__title-item ~ .basket__title-item {
-    transform: translateX(8px);
+  .basket__total-number:nth-child(2) {
+    transform: translateX(5px);
   }
 
+  .basket__total-number:last-child {
+    transform: translateX(10px);
+  }
 }
 
 /* lg <= Extra large (xl) */
@@ -231,14 +234,21 @@
     padding-left: 10px;
   }
 
-  .basket__title-list--total .basket__title-item ~ .basket__title-item {
+  .basket__total-number:first-child {
+    transform: translateX(-10px);
+  }
+
+  .basket__total-number:nth-child(2) {
+    transform: translateX(-3px);
+  }
+
+  .basket__total-number:last-child {
     transform: translateX(0);
   }
 
   .sale__item:not(:first-child) {
     margin-right: 3px;
   }
-
 }
 
 /* md <= Large (lg) */
@@ -581,8 +591,15 @@
     margin-bottom: 10px;
   }
 
-  .basket__content-numbers {
+  .basket__content-numbers,
+  .basket__total-number {
     font-size: 16px;
+  }
+
+  .basket__total-number:first-child,
+  .basket__total-number:nth-child(2),
+  .basket__total-number:last-child {
+    transform: translateX(0);
   }
 
   .basket__title-list--bottom .basket__inner {
@@ -895,22 +912,23 @@
     font-size: 14px;
   }
 
-  .basket__title-list--total .basket__title-item:nth-child(2) {
-    transform: translateX(4px);
-  }
-
-  .basket__title-list--total .basket__title-item:last-child {
-    transform: translateX(10px);
-  }
-
   .basket__total .basket__title-item-subtitle,
   .basket__total .basket__content-numbers,
   .basket__title-item-subtitle  {
     font-size: 16px;
   }
 
-  .basket__title-item span, .basket__content__subtitle {
+  .basket__title-item span,
+  .basket__content__subtitle {
     font-size: 14px;
+  }
+
+  .basket__total-number:nth-child(2) {
+    transform: translateX(5px);
+  }
+
+  .basket__total-number:last-child {
+    transform: translateX(10px);
   }
 
   .basket__buttons {
@@ -1420,14 +1438,13 @@
     padding-right: 0;
   }
 
-  .basket__title-list--total .basket__title-item:nth-child(2),
-  .basket__title-list--total .basket__title-item:last-child {
-    transform: translateX(0);
+  .basket__title-item-subtitle {
+    font-size: 14px;
   }
 
-  .basket__title-item-subtitle,
-  .basket__title-item {
-    font-size: 14px;
+  .basket__total-number:nth-child(2),
+  .basket__total-number:last-child {
+    transform: translateX(0);
   }
 }
 

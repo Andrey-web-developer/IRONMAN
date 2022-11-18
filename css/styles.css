@@ -2862,6 +2862,13 @@ body {
   font-weight: 700;
 }
 
+.basket__total-number {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--color-accent);
+}
+
 .basket__buttons {
   display: flex;
   justify-content: space-between;

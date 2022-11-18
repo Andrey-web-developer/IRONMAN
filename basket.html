@@ -253,34 +253,31 @@
         </div>
         <div class="row">
           <div class="col basket__wrapper">
-            <ul class="d-none d-md-flex basket__title-list list-reset">
-              <li class="basket__title-item">
-                <h3 class="basket__title-item-subtitle">Наименование</h3>
-              </li>
-              
+            <div class="d-none d-md-flex basket__title-list">
+              <h3 class="basket__title-item-subtitle">Наименование</h3>
               <div class="col-7 basket__inner basket__inner--title">
-                <li class="col-6 col-md-5 col-lg-3 basket__title-item">
+                <div class="col-6 col-md-5 col-lg-3 basket__title-item">
                   <h3 class="basket__title-item-subtitle">Цена</h3>
                   <span class="d-none d-lg-block">Без скидки</span>
-                </li>
-                <li class="col-3 d-none d-lg-block basket__title-item">
+                </div>
+                <div class="col-3 d-none d-lg-block basket__title-item">
                   <h3 class="basket__title-item-subtitle">Цена</h3>
                   <span>С учетом скидки</span>
-                </li>
-                <li class="col-5 col-lg-3 basket__title-item">
+                </div>
+                <div class="col-5 col-lg-3 basket__title-item">
                   <h3 class="basket__title-item-subtitle">Кол-во</h3>
                   <span>Шт.</span>
-                </li>
-                <li class="col-2 d-none d-lg-block basket__title-item">
+                </div>
+                <div class="col-2 d-none d-lg-block basket__title-item">
                   <h3 class="basket__title-item-subtitle">Вес</h3>
                   <span>Кг</span>
-                </li>
-                <li class="d-none d-md-block col-auto basket__title-item">
+                </div>
+                <div class="d-none d-md-block col-auto basket__title-item">
                   <h3 class="basket__title-item-subtitle">Сумма</h3>
                   <span>Руб.</span>
-                </li>
+                </div>
               </div>
-            </ul>
+            </div>
             <ul class="basket__list list-reset">
               <li class="basket__item">
                 <ul class="basket__content-list list-reset">
@@ -431,8 +428,8 @@
                 </ul>
               </li>
             </ul>
-            <ul class="basket__title-list basket__title-list--bottom list-reset">
-              <div class="col-9 col-md-7 basket__inner">
+            <div class="basket__title-list basket__title-list--bottom">
+              <ul class="col-9 col-md-7 basket__inner list-reset">
                 <li class="col-3 basket__title-item">
                   <h3 class="basket__title-item-subtitle">Кол-во</h3>
                   <span>Шт.</span>
@@ -445,18 +442,16 @@
                   <h3 class="basket__title-item-subtitle">Сумма</h3>
                   <span>Руб.</span>
                 </li>
-              </div>
-            </ul>
-            <ul class="basket__list basket__title-list--total list-reset">
-              <li class="basket__title-item">
-                <h3 class="basket__title-item-subtitle">Итого</h3>
-              </li>
+              </ul>
+            </div>
+            <div class="basket__list basket__title-list--total">
+              <h3 class="basket__title-item-subtitle">Итого</h3>
               <div class="col-9 col-md-7 basket__inner">
-                <li class="col-3 col-sm-4 col-lg-3 basket__title-item">3</li>
-                <li class="col-2 col-sm-3 col-md-3 col-lg-2 basket__title-item">1,5</li>
-                <li class="col-3 col-sm-2 col-md-2 col-lg-1 basket__title-item">1800</li>
+                <span class="col-3 col-sm-4 col-lg-3 basket__total-number">3</span>
+                <span class="col-2 col-sm-3 col-md-3 col-lg-2 basket__total-number">1,5</span>
+                <span class="col-3 col-sm-2 col-md-2 col-lg-1 basket__total-number">1800</span>
               </div>
-            </ul>
+            </div>
             <div class="basket__buttons">
               <button class="basket__button-reset button btn-reset">Очистить</button>
               <button class="basket__button-submit button btn-reset">Оформить заказ</button>
