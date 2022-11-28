@@ -75,6 +75,10 @@
   .basket__total-number:last-child {
     transform: translateX(10px);
   }
+
+  .recommendation__title {
+    font-size: 26px;
+  }
 }
 
 /* lg <= Extra large (xl) */
@@ -248,6 +252,10 @@
 
   .sale__item:not(:first-child) {
     margin-right: 3px;
+  }
+
+  .recommendation__title {
+    font-size: 23px;
   }
 }
 
@@ -576,7 +584,7 @@
   .basket__title-list--total .basket__inner {
     justify-content: space-between;
   }
-  
+
 
   .basket__content__inner {
     flex-direction: column;
@@ -610,7 +618,7 @@
     display: none;
   }
 
-  .wholesalers-account__sale-title:not(:first-child){
+  .wholesalers-account__sale-title:not(:first-child) {
     margin-bottom: 10px;
   }
 
@@ -620,6 +628,10 @@
 
   .orders__text {
     font-size: 16px;
+  }
+
+  .news__img {
+    object-position: top;
   }
 }
 
@@ -687,6 +699,14 @@
 
   .news__title {
     padding-top: 50px;
+  }
+
+  .news--archive .news {
+    padding-bottom: 30px;
+  }
+
+  .news--archive .news__title {
+    padding-top: 0;
   }
 
   .swiper2 .swiper-slide--bg {
@@ -914,7 +934,7 @@
 
   .basket__total .basket__title-item-subtitle,
   .basket__total .basket__content-numbers,
-  .basket__title-item-subtitle  {
+  .basket__title-item-subtitle {
     font-size: 16px;
   }
 
@@ -963,6 +983,10 @@
 
   .wholesalers-account__wrapper--border .wholesalers-account__inner:nth-child(10) {
     border-bottom: 1px solid var(--color-grey);
+  }
+
+  .recommendation__title {
+    font-size: 50px;
   }
 
 }
@@ -1070,8 +1094,16 @@
     margin-bottom: 10px;
   }
 
+  .news--archive .news {
+    padding-bottom: 0;
+  }
+
   .news__wrapper {
     margin-bottom: 10px;
+  }
+
+  .news__list {
+    justify-content: center;
   }
 
   .news__item {
@@ -1080,10 +1112,6 @@
 
   .news__item:nth-child(3) {
     margin-bottom: 30px;
-  }
-
-  .news__img img {
-    object-position: top;
   }
 
   .swiper2 .swiper-slide--bg {
