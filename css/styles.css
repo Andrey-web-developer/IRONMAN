@@ -2064,15 +2064,11 @@ body {
 
 
 .filter-products__label,
-.filter-products__checkbox,
-.product-card__radio-text,
-.product-card__radio {
+.filter-products__checkbox {
   cursor: pointer;
 }
 
-.filter-products__checkbox,
-.product-card__radio,
-.product-card__rating-radio {
+.filter-products__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -2160,7 +2156,7 @@ body {
   font-family: 'Bebas Neue Pro';
   font-weight: 700;
   font-size: 66px;
-  line-height: 45px;
+  line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--color-accent);
@@ -2208,19 +2204,16 @@ body {
   object-fit: contain;
 }
 
-.product-card__form {
-  margin-bottom: 50px;
-}
-
-.product-card__radio-list {
+.product-card__list {
   margin-bottom: 12px;
 }
 
-.product-card__radio-title,
-.stepper__title,
-.product-card__rating-title {
-  margin: 0;
+.product-card__item:first-child {
   margin-bottom: 17px;
+}
+
+.product-card__list-title {
+  margin: 0;
   font-family: 'Bebas Neue Pro';
   font-weight: 700;
   font-size: 30px;
@@ -2230,26 +2223,32 @@ body {
   color: var(--color-accent);
 }
 
-.product-card__radio-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0;
+.stepper__title,
+.product-card__rating-title {
+  margin: 0;
+  font-family: 'Bebas Neue Pro';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
 }
 
-.product-card__radio-label {
+.product-card__sublist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card__subitem {
   margin-bottom: 30px;
 }
 
-.product-card__radio-label:not(:last-child) {
+.product-card__subitem:not(:last-child) {
   margin-right: 8px;
 }
 
-.product-card__radio:checked+.product-card__radio-text {
-  color: var(--color-light);
-  background-color: var(--color-blue);
-}
-
-.product-card__radio-text {
+.product-card__link {
   padding: 0.75em 1.25em;
   font-weight: 400;
   font-size: 16px;
@@ -2259,6 +2258,15 @@ body {
   color: var(--color-accent);
   background-color: var(--color-grey);
   border-radius: 5px;
+}
+
+.product-card__link:hover {
+  color: var(--color-accent);
+}
+
+.product-card__link.product-card__link-active {
+  color: var(--color-light);
+  background-color: var(--color-blue);
 }
 
 .product-card__wrapper {
@@ -2350,23 +2358,27 @@ body {
   margin-bottom: 15px;
 }
 
-.product-card__rating-wrapper {
-  position: relative;
+.product-card__rating-stars {
   margin-bottom: 15px;
-  font-size: 0;
+  display: flex;
 }
 
-.product-card__rating-wrapper::before {
+.product-card__rating-star:not(:last-child) {
+  margin-right: 5px;
+}
+
+.product-card__rating-star {
+  position: relative;
+}
+
+.product-card__rating-star::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   background-image: url('../images/product-page/star.svg');
+  background-position-y: center;
   background-repeat: no-repeat;
-}
-
-.product-card__rating-label:not(:last-child) {
-  margin-right: 5px;
 }
 
 .product-card__reviews {
@@ -2405,6 +2417,10 @@ body {
 .product-card__add-basket svg {
   margin-right: 10px;
   stroke: currentColor;
+}
+
+.product-card__tab {
+  margin-top: 16px;
 }
 
 .product-card__tab .nav-tabs {

@@ -143,14 +143,14 @@ function sidePanel() {
         filterButton.addEventListener('click', () => {
           const applyButton = document.querySelector('.filter-products__apply');
 
-          document.querySelector('.catalog__filter').classList.add('transformation');
+          document.querySelector('.filter-products').classList.add('transformation');
 
           lockScroll();
 
           overlay.classList.add('open');
 
           const exitPanel = () => {
-            document.querySelector('.catalog__filter').classList.remove('transformation');
+            document.querySelector('.filter-products').classList.remove('transformation');
             overlay.classList.remove('open');
             unlockScroll();
           }
