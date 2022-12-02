@@ -2117,6 +2117,34 @@ body {
   text-transform: uppercase;
 }
 
+.catalog__reviews {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.catalog__reviews.product-card__reviews {
+  font-family: 'Bebas Neue Pro';
+  font-size: 21px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: var(--color-grey);
+}
+
+.catalog__reviews .product-card__rating-stars {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.catalog__reviews .product-card__rating-star {
+  transform: scale(0.7);
+}
+
+.catalog__reviews .product-card__rating-star:not(:last-child) {
+  margin-right: 0;
+}
+
 .catalog__button-filter {
   margin-left: auto;
   padding: 8px 10px;
@@ -3209,7 +3237,7 @@ body {
 
 .article__title,
 .article__date,
-.recommendation__title  {
+.recommendation__title {
   font-family: 'Bebas Neue Pro';
   font-weight: 700;
   line-height: 1.2;
@@ -3235,7 +3263,7 @@ body {
 
 .article__text {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.3;
   color: var(--color-accent);
 }
@@ -3278,7 +3306,7 @@ body {
 
 .article__source {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   text-align: end;
 }
 
