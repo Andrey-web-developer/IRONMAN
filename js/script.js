@@ -47,7 +47,6 @@ function swiper() {
   }
 
   if (sliderProductPreview && sliderProductImages) {
-
     const sliderThumbs = new Swiper(sliderProductPreview, {
       slidesPerView: 3,
       spaceBetween: 25,
@@ -57,7 +56,14 @@ function swiper() {
       slidesPerView: 1,
       spaceBetween: 10,
       mousewheel: true,
-      grabCursor: true,
+      breakpoints: {
+        320: {
+          allowTouchMove: true,
+        },
+        576: {
+          allowTouchMove: false,
+        },
+      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,

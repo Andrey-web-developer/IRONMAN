@@ -235,6 +235,68 @@
             <li class="breadcrumb-item active" aria-current="page">Товар</li>
           </ol>
         </nav>
+        <!-- Модальное окно -->
+        <div class="modal fade" id="first-picture" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered product-card__modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="modal-close btn-reset" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.32769 6.98007L13.5245 2.77892C13.797 2.46923 13.9413 2.0674 13.9282 1.65511C13.915 1.24282 13.7453 0.851018 13.4536 0.559337C13.162 0.267656 12.7702 0.0979906 12.3579 0.0848273C11.9456 0.071664 11.5438 0.215991 11.2341 0.488472L7.03291 4.68529L2.82419 0.475488C2.67344 0.32474 2.49448 0.20516 2.29752 0.123575C2.10056 0.041991 1.88945 1.58839e-09 1.67626 0C1.46307 -1.58839e-09 1.25197 0.041991 1.05501 0.123575C0.858044 0.20516 0.679079 0.32474 0.528331 0.475488C0.377582 0.626237 0.258002 0.805201 0.176418 1.00216C0.0948333 1.19913 0.0528423 1.41023 0.0528423 1.62342C0.0528423 1.83661 0.0948333 2.04771 0.176418 2.24468C0.258002 2.44164 0.377582 2.6206 0.528331 2.77135L4.73813 6.98007L0.541314 11.1801C0.376722 11.3273 0.243879 11.5064 0.150913 11.7067C0.0579464 11.9069 0.0068112 12.124 0.000635221 12.3447C-0.00554076 12.5654 0.0333725 12.785 0.114995 12.9901C0.196617 13.1952 0.319231 13.3815 0.475336 13.5376C0.631441 13.6938 0.817755 13.8164 1.02288 13.898C1.228 13.9796 1.44762 14.0185 1.6683 14.0123C1.88898 14.0062 2.10608 13.955 2.30632 13.8621C2.50655 13.7691 2.68572 13.6363 2.83285 13.4717L7.03291 9.27485L11.2287 13.4717C11.5331 13.7761 11.946 13.9472 12.3766 13.9472C12.8071 13.9472 13.2201 13.7761 13.5245 13.4717C13.829 13.1672 14 12.7543 14 12.3237C14 11.8932 13.829 11.4803 13.5245 11.1758L9.32769 6.98007Z"
+                      fill="white" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="swiper-slide__card-inner">
+                  <img src="images/product-page/product-img1.png" alt="Фото товара" class="swiper-slide__img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="second-picture" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered product-card__modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="modal-close btn-reset" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.32769 6.98007L13.5245 2.77892C13.797 2.46923 13.9413 2.0674 13.9282 1.65511C13.915 1.24282 13.7453 0.851018 13.4536 0.559337C13.162 0.267656 12.7702 0.0979906 12.3579 0.0848273C11.9456 0.071664 11.5438 0.215991 11.2341 0.488472L7.03291 4.68529L2.82419 0.475488C2.67344 0.32474 2.49448 0.20516 2.29752 0.123575C2.10056 0.041991 1.88945 1.58839e-09 1.67626 0C1.46307 -1.58839e-09 1.25197 0.041991 1.05501 0.123575C0.858044 0.20516 0.679079 0.32474 0.528331 0.475488C0.377582 0.626237 0.258002 0.805201 0.176418 1.00216C0.0948333 1.19913 0.0528423 1.41023 0.0528423 1.62342C0.0528423 1.83661 0.0948333 2.04771 0.176418 2.24468C0.258002 2.44164 0.377582 2.6206 0.528331 2.77135L4.73813 6.98007L0.541314 11.1801C0.376722 11.3273 0.243879 11.5064 0.150913 11.7067C0.0579464 11.9069 0.0068112 12.124 0.000635221 12.3447C-0.00554076 12.5654 0.0333725 12.785 0.114995 12.9901C0.196617 13.1952 0.319231 13.3815 0.475336 13.5376C0.631441 13.6938 0.817755 13.8164 1.02288 13.898C1.228 13.9796 1.44762 14.0185 1.6683 14.0123C1.88898 14.0062 2.10608 13.955 2.30632 13.8621C2.50655 13.7691 2.68572 13.6363 2.83285 13.4717L7.03291 9.27485L11.2287 13.4717C11.5331 13.7761 11.946 13.9472 12.3766 13.9472C12.8071 13.9472 13.2201 13.7761 13.5245 13.4717C13.829 13.1672 14 12.7543 14 12.3237C14 11.8932 13.829 11.4803 13.5245 11.1758L9.32769 6.98007Z"
+                      fill="white" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="swiper-slide__card-inner">
+                  <img src="images/product-page/product-img2.png" alt="Фото товара" class="swiper-slide__img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="third-picture" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered product-card__modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="modal-close btn-reset" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.32769 6.98007L13.5245 2.77892C13.797 2.46923 13.9413 2.0674 13.9282 1.65511C13.915 1.24282 13.7453 0.851018 13.4536 0.559337C13.162 0.267656 12.7702 0.0979906 12.3579 0.0848273C11.9456 0.071664 11.5438 0.215991 11.2341 0.488472L7.03291 4.68529L2.82419 0.475488C2.67344 0.32474 2.49448 0.20516 2.29752 0.123575C2.10056 0.041991 1.88945 1.58839e-09 1.67626 0C1.46307 -1.58839e-09 1.25197 0.041991 1.05501 0.123575C0.858044 0.20516 0.679079 0.32474 0.528331 0.475488C0.377582 0.626237 0.258002 0.805201 0.176418 1.00216C0.0948333 1.19913 0.0528423 1.41023 0.0528423 1.62342C0.0528423 1.83661 0.0948333 2.04771 0.176418 2.24468C0.258002 2.44164 0.377582 2.6206 0.528331 2.77135L4.73813 6.98007L0.541314 11.1801C0.376722 11.3273 0.243879 11.5064 0.150913 11.7067C0.0579464 11.9069 0.0068112 12.124 0.000635221 12.3447C-0.00554076 12.5654 0.0333725 12.785 0.114995 12.9901C0.196617 13.1952 0.319231 13.3815 0.475336 13.5376C0.631441 13.6938 0.817755 13.8164 1.02288 13.898C1.228 13.9796 1.44762 14.0185 1.6683 14.0123C1.88898 14.0062 2.10608 13.955 2.30632 13.8621C2.50655 13.7691 2.68572 13.6363 2.83285 13.4717L7.03291 9.27485L11.2287 13.4717C11.5331 13.7761 11.946 13.9472 12.3766 13.9472C12.8071 13.9472 13.2201 13.7761 13.5245 13.4717C13.829 13.1672 14 12.7543 14 12.3237C14 11.8932 13.829 11.4803 13.5245 11.1758L9.32769 6.98007Z"
+                      fill="white" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="swiper-slide__card-inner">
+                  <img src="images/product-page/product-img3.png" alt="Фото товара" class="swiper-slide__img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Модальное окно -->
         <div class="row">
           <div class="col">
             <h1 class="product-card__title">IRONMAN™ F-80 (Формула 80)</h1>
@@ -245,7 +307,7 @@
             <div class="swiper swiper__images">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="swiper-slide__card-inner">
+                  <div class="swiper-slide__card-inner" data-bs-toggle="modal" data-bs-target="#first-picture">
                     <img src="images/product-page/product-img1.png" alt="Фото товара" class="swiper-slide__img">
                     <span class="swiper-slide__zoom d-none d-sm-block" aria-label="Увеличить изображение">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -257,7 +319,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper-slide__card-inner">
+                  <div class="swiper-slide__card-inner" data-bs-toggle="modal" data-bs-target="#second-picture">
                     <img src="images/product-page/product-img2.png" alt="Фото товара" class="swiper-slide__img">
                     <span class="swiper-slide__zoom d-none d-sm-block" aria-label="Увеличить изображение">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -269,7 +331,7 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper-slide__card-inner">
+                  <div class="swiper-slide__card-inner" data-bs-toggle="modal" data-bs-target="#third-picture">
                     <img src="images/product-page/product-img3.png" alt="Фото товара" class="swiper-slide__img">
                     <span class="swiper-slide__zoom d-none d-sm-block" aria-label="Увеличить изображение">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
