@@ -982,16 +982,16 @@
   }
 
   .basket__buttons {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
   .basket__button-reset {
-    margin-bottom: 20px;
     align-self: auto;
   }
 
   .basket__button-submit {
+    margin-bottom: 20px;
     font-size: 18px;
   }
 
