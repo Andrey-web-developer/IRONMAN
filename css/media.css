@@ -76,6 +76,11 @@
   .recommendation__title {
     font-size: 26px;
   }
+
+  .order__basket-inner {
+    margin-right: 14px;
+  }
+  
 }
 
 /* lg <= Extra large (xl) */
@@ -649,6 +654,18 @@
   .article__date {
     font-size: 20px;
   }
+
+  .order .basket__title-list--bottom {
+    padding: 0 20px;
+  }
+
+  .order__basket-inner {
+    margin-right: 0;
+  }
+
+  .order .recommendation__title {
+    font-size: 50px;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -1009,6 +1026,15 @@
   .recommendation .cards__price-now {
     font-size: 35px;
   }
+
+  .order .recommendation {
+    margin-top: 0;
+  }
+
+  .order__submit {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /* xs <= Small (sm) */
@@ -1343,7 +1369,8 @@
   }
 
   .where-buy,
-  .communication {
+  .communication,
+  .order {
     padding-top: 10px;
   }
 
@@ -1497,6 +1524,49 @@
 
   .recommendation {
     margin-top: 20px;
+  }
+
+  .order__title {
+    font-size: 38px;
+  }
+
+  .order__subtitle {
+    font-size: 25px;
+  }
+
+  .order__text {
+    font-size: 16px;
+  }
+
+  .order .basket__content-numbers {
+    text-align: center;
+  }
+
+  .order__text-title,
+  .form__select {
+    font-size: 16px;
+  }
+
+  .order__textarea {
+    height: 58px;
+  }
+
+  .order .modal-footer .form__text--star {
+    flex-direction: column;
+    margin-right: auto;
+  }
+
+  .order .modal-footer .filter-products__text,
+  .form__link-more{
+    font-size: 14px;
+  }
+
+  .order .modal-footer .filter-products__text::before {
+    flex-shrink: 0;
+  }
+
+  .form__link-more {
+    padding-top: 10px;
   }
 }
 
