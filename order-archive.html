@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IRONMAN заказ</title>
+  <title>Архив заказов</title>
   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="libs/swiper.js/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -226,387 +226,45 @@
     </div>
   </header>
   <main>
-    <section class="order">
+    <section class="order-archive order">
       <div class="container">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-            <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
-            <li class="breadcrumb-item"><a href="basket.html">Корзина</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Оформление заказа</li>
+            <li class="breadcrumb-item active" aria-current="page">Архив заказов</li>
           </ol>
         </nav>
-        <div class="modal fade" id="edit-data" tabindex="-1" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h2 class="modal-title">Ваши данные</h2>
-                <button class="btn-reset" data-bs-dismiss="modal" aria-label="Закрыть модальное окно">
-                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M9.32769 6.98007L13.5245 2.77892C13.797 2.46923 13.9413 2.0674 13.9282 1.65511C13.915 1.24282 13.7453 0.851018 13.4536 0.559337C13.162 0.267656 12.7702 0.0979906 12.3579 0.0848273C11.9456 0.071664 11.5438 0.215991 11.2341 0.488472L7.03291 4.68529L2.82419 0.475488C2.67344 0.32474 2.49448 0.20516 2.29752 0.123575C2.10056 0.041991 1.88945 1.58839e-09 1.67626 0C1.46307 -1.58839e-09 1.25197 0.041991 1.05501 0.123575C0.858044 0.20516 0.679079 0.32474 0.528331 0.475488C0.377582 0.626237 0.258002 0.805201 0.176418 1.00216C0.0948333 1.19913 0.0528423 1.41023 0.0528423 1.62342C0.0528423 1.83661 0.0948333 2.04771 0.176418 2.24468C0.258002 2.44164 0.377582 2.6206 0.528331 2.77135L4.73813 6.98007L0.541314 11.1801C0.376722 11.3273 0.243879 11.5064 0.150913 11.7067C0.0579464 11.9069 0.0068112 12.124 0.000635221 12.3447C-0.00554076 12.5654 0.0333725 12.785 0.114995 12.9901C0.196617 13.1952 0.319231 13.3815 0.475336 13.5376C0.631441 13.6938 0.817755 13.8164 1.02288 13.898C1.228 13.9796 1.44762 14.0185 1.6683 14.0123C1.88898 14.0062 2.10608 13.955 2.30632 13.8621C2.50655 13.7691 2.68572 13.6363 2.83285 13.4717L7.03291 9.27485L11.2287 13.4717C11.5331 13.7761 11.946 13.9472 12.3766 13.9472C12.8071 13.9472 13.2201 13.7761 13.5245 13.4717C13.829 13.1672 14 12.7543 14 12.3237C14 11.8932 13.829 11.4803 13.5245 11.1758L9.32769 6.98007Z"
-                      fill="white" fill-opacity="0.5" />
-                  </svg>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form action="#" class="modal-form">
-                  <div class="form__wrapper">
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Фамилия</span>
-                      <input type="text" required aria-label="Обязательное поле" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Имя</span>
-                      <input type="text" required aria-label="Обязательное поле" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Отчество</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Email</span>
-                      <input type="email" required aria-label="Обязательное поле" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Пароль</span>
-                      <input type="password" required aria-label="Обязательное поле" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Повторите пароль</span>
-                      <input type="password" required aria-label="Обязательное поле" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Телефон</span>
-                      <span class="form__tel-inner">
-                        +7
-                        <input type="tel" required aria-label="Обязательное поле" class="form__input input-reset">
-                      </span>
-                    </label>
-                    <label class="filter-products__label">
-                      <input class="filter-products__checkbox" type="checkbox">
-                      <span class="form__notice filter-products__text">СМС-уведомления о заказах</span>
-                    </label>
-                    <h3 class="modal-form__title">Ваше место проживания</h3>
-                    <ul class="modal-form__list order__sublist--table list-reset">
-                      <li class="order__text--table">
-                        <a href="#" class="order__text-title modal-form__link modal-form__link--active">
-                          Москва
-                        </a>
-                      </li>
-                      <li class="order__text--table">
-                        <a href="#" class="order__text-title modal-form__link">
-                          Зеленоград
-                        </a>
-                      </li>
-                      <li class="order__text--table">
-                        <a href="#" class="order__text-title modal-form__link">
-                          Ближнее подмосковье:
-                          <ul class="modal-form__sublist list-reset">
-                            <li class="modal-form__item">Королев</li>
-                            <li class="modal-form__item">Красногорск</li>
-                            <li class="modal-form__item">Люберцы</li>
-                            <li class="modal-form__item">Мытищи</li>
-                            <li class="modal-form__item">Реутов</li>
-                            <li class="modal-form__item">Химки</li>
-                          </ul>
-                        </a>
-                      </li>
-                      <li class="order__text--table">
-                        <a href="#" class="order__text-title modal-form__link">
-                          Другой город (населенный пункт)
-                        </a>
-                      </li>
-                    </ul>
-                    <!-- Форма для Москвы -->
-                    <h3 class="modal-form__title">Адрес для доставки заказа курьером (г. Москва)</h3>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Улица</span>
-                      <select class="form-select form-select-lg form__select" required
-                        aria-label="Выберите улицу из списка (обязательное поле)">
-                        <option value="">...</option>
-                      </select>
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Дом</span>
-                      <input type="text" required aria-label="Обязательное поле" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Корпус</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Этаж</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Подъезд</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Квартира (офис, для доставки по месту работы)</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Организация (для доставки по месту работы)</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Код домофона</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Ближайшая станция метро</span>
-                      <select class="form-select form-select-lg form__select" required aria-label="Обязательное поле">
-                        <option value="">...</option>
-                      </select>
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Наземный транспорт</span>
-                      <select class="form-select form-select-lg form__select"
-                        aria-label="Выберите наземный транспорт из списка">
-                        <option>Не выбрано</option>
-                        <option>Автобус</option>
-                        <option>Троллейбус</option>
-                        <option>Трамвай</option>
-                        <option>Маршрутка</option>
-                      </select>
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Номер наземного транспорта</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Остановка наземного транспорта</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <textarea class="order__textarea" name="comment" cols="30" rows="1"
-                        placeholder="Дополнительная информация, которую Вы хотите сообщить"></textarea>
-                    </label>
-
-                    <!-- Форма для Зеленограда -->
-                    <!-- <h3 class="modal-form__title">Адрес для доставки заказа курьером (г. Зеленоград)
-                    </h3>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Улица/микрорайон</span>
-                      <input type="text" required aria-label="Обязательное поле"
-                        class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Дом</span>
-                      <input type="text" required aria-label="Обязательное поле"
-                        class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Корпус</span>
-                      <input type="text"class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Этаж</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Подъезд</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Квартира (офис, для доставки по месту работы)</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Организация (для доставки по месту работы)</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Код домофона</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <textarea class="order__textarea" name="comment" cols="30" rows="1"
-                        placeholder="Дополнительная информация, которую Вы хотите сообщить"></textarea>
-                    </label> -->
-                    <!-- Форма для подмосковья -->
-                    <!-- <h3 class="modal-form__title">Адрес для доставки заказа курьером (Ближнее подмосковье)</h3>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Город</span>
-                      <select class="form-select form-select-lg form__select" required
-                        aria-label="Обязательное поле">
-                        <option>Не выбрано</option>
-                        <option>Королев</option>
-                        <option>Красногорск</option>
-                        <option>Люберцы</option>
-                        <option>Мытищи</option>
-                        <option>Реутов</option>
-                        <option>Химки</option>
-                      </select>
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Индекс</span>
-                      <input type="text" required aria-label="Обязательное поле"
-                        class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Населенный пункт</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Улица</span>
-                      <input type="text" required aria-label="Обязательное поле"
-                        class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Дом</span>
-                      <input type="text" required aria-label="Обязательное поле"
-                        class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Корпус</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Этаж</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Подъезд</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Квартира (офис, для доставки по месту работы)</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Организация (для доставки по месту работы)</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Код домофона</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <textarea class="order__textarea" name="comment" cols="30" rows="1"
-                        placeholder="Дополнительная информация, которую Вы хотите сообщить"></textarea>
-                    </label> -->
-                    <!-- Форма для другого города/населенного пункта -->
-                    <!-- <h3 class="modal-form__title">Адрес для доставки заказа почтой</h3>
-                    <label class="form__label">
-                      <span class="form__text form__text--star order__text-title">Индекс</span>
-                      <input type="text" required aria-label="Обязательное поле"
-                        class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Республика/Край</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Город</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Населенный пункт</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Район</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Улица</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Дом</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Корпус</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Квартира (офис, для доставки по месту работы)</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <span class="form__text order__text-title">Организация (для доставки по месту работы)</span>
-                      <input type="text" class="form__input input-reset">
-                    </label>
-                    <label class="form__label">
-                      <textarea class="order__textarea" name="comment" cols="30" rows="1"
-                        placeholder="Дополнительная информация, которую Вы хотите сообщить"></textarea>
-                    </label> -->
-                    
-                    <div class="modal-footer">
-                      <label class="filter-products__label form__text--star">
-                        <input class="filter-products__checkbox" type="checkbox" required
-                          aria-label="Обязательное поле">
-                        <span class="form__notice filter-products__text">
-                          Я согласен на обработку моих данных.
-                        </span>
-                        <a class="form__link-more" href="#">Подробнее</a>
-                      </label>
-                      <span class="col-12 form__text form__text--star form__hint">Обязательные поля</span>
-                      <button class="form__button button btn-reset" type="submit">Зарегистрировать</button>
-                      <button class="form__button form__button--close button btn-reset"
-                        data-bs-dismiss="modal">Отмена</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="row">
           <div class="col-lg-8 col-lg-9">
             <div class="row">
-              <h1 class="col order__title">Оформление заказа</h1>
+              <h1 class="col order__title">Просмотр заказов</h1>
             </div>
             <ul class="row order__list">
               <li class="col-12 order__item">
-                <h2 class="order__subtitle">Информация о покупателе</h2>
-                <button class="order__btn-change order__text btn-reset" data-bs-toggle="modal"
-                  data-bs-target="#edit-data" aria-label="Нажмите, чтобы изменить данные">
-                  Ваши данные
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM16.3788 10.6778L13.3203 7.61848C13.1914 7.48959 12.9812 7.48959 12.8523 7.61848L6.35352 14.1191L6.00426 17.2665C5.95679 17.6871 6.31283 18.0432 6.73329 17.9957L9.88001 17.6464L16.3788 11.1458C16.5077 11.0169 16.5077 10.8066 16.3788 10.6778ZM17.1587 5.18665L18.8134 6.84178C19.3289 7.35732 19.3289 8.19506 18.8134 8.71399L17.6131 9.91464C17.4842 10.0435 17.274 10.0435 17.1451 9.91464L14.0866 6.85535C13.9577 6.72647 13.9577 6.51618 14.0866 6.3873L15.287 5.18665C15.8058 4.67112 16.6433 4.67112 17.1587 5.18665Z" />
-                  </svg>
-                </button>
                 <ul class="order__sublist order__sublist--table list-reset">
                   <li class="order__text--table">
-                    <h3 class="order__text-title">
-                      ФИО
-                    </h3>
-                    <span>Иванов Иван Иванович</span>
+                    <div class="order__text-title">
+                      Дата
+                    </div>
+                    <time datetime="2022-12-24">
+                      24.12.2022
+                    </time>
                   </li>
                   <li class="order__text--table">
-                    <h3 class="order__text-title">
-                      Адрес доставки
-                    </h3>
-                    <span>Москва, ул. д. кв.</span>
+                    <div class="order__text-title">
+                      Заказ
+                    </div>
+                    <span>20221224/150300/786</span>
                   </li>
                   <li class="order__text--table">
-                    <h3 class="order__text-title">
-                      Метро
-                    </h3>
-                    <span>Комсомольская</span>
-                  </li>
-                  <li class="order__text--table">
-                    <h3 class="order__text-title">
-                      Email
-                    </h3>
-                    <span>@gmail.com</span>
-                  </li>
-                  <li class="order__text--table">
-                    <h3 class="order__text-title">
-                      Телефон
-                    </h3>
-                    <span>89112223344</span>
+                    <div class="order__text-title">
+                      Статус
+                    </div>
+                    <span>Срок оплаты этого заказа истек</span>
+                    <div class="order__text-title">Уточните возможность оплаты по&nbsp;телефону +7(499)968-6244 или воспользуйтесь <a class="tab__link" href="#" target="_blank">формой обратной связи</a></div>
                   </li>
                 </ul>
-              </li>
-              <li class="col-12 order__item">
-                <h2 class="order__subtitle">Информация о составе заказа</h2>
+                <h2 class="order-archive__subtitle--mt order__subtitle">Состав заказа</h2>
                 <div class="basket__wrapper">
                   <div class="d-none d-md-flex basket__title-list">
                     <h3 class="basket__title-item-subtitle">Наименование</h3>
@@ -765,51 +423,192 @@
                     <span>2060 руб</span>
                   </li>
                 </ul>
+                <a class="order-archive__add button" href="#">Добавить позиции этого заказа в корзину</a>
               </li>
               <li class="col-12 order__item">
-                <form action="#" class="order__form">
-                  <ul class="order__form-list list-reset">
-                    <li class="order__form-item">
-                      <h2 class="order__subtitle">Способ доставки</h2>
-                      <ul class="order__sublist list-reset">
-                        <li class="order__text">
-                          <label class="order__label">
-                            <input class="order__input" name="delivery" type="radio" value="carrier">
-                            Курьером
-                          </label>
+                <ul class="order__sublist order__sublist--table list-reset">
+                  <li class="order__text--table">
+                    <div class="order__text-title">
+                      Дата
+                    </div>
+                    <time datetime="2022-12-24">
+                      24.12.2022
+                    </time>
+                  </li>
+                  <li class="order__text--table">
+                    <div class="order__text-title">
+                      Заказ
+                    </div>
+                    <span>20221224/150300/786</span>
+                  </li>
+                  <li class="order__text--table">
+                    <div class="order__text-title">
+                      Статус
+                    </div>
+                    <span>Срок оплаты этого заказа истек</span>
+                    <div class="order__text-title">Уточните возможность оплаты по&nbsp;телефону +7(499)968-6244 или воспользуйтесь <a class="tab__link" href="#" target="_blank">формой обратной связи</a></div>
+                  </li>
+                </ul>
+                <h2 class="order-archive__subtitle--mt order__subtitle">Состав заказа</h2>
+                <div class="basket__wrapper">
+                  <div class="d-none d-md-flex basket__title-list">
+                    <h3 class="basket__title-item-subtitle">Наименование</h3>
+                    <div class="col-7 basket__inner basket__inner--title">
+                      <div class="col-6 col-md-5 col-lg-3 basket__title-item">
+                        <h3 class="basket__title-item-subtitle">Цена</h3>
+                        <span class="d-none d-lg-block">Без скидки</span>
+                      </div>
+                      <div class="col-3 d-none d-lg-block basket__title-item">
+                        <h3 class="basket__title-item-subtitle">Цена</h3>
+                        <span>С учетом скидки</span>
+                      </div>
+                      <div class="col-5 col-lg-3 basket__title-item">
+                        <h3 class="basket__title-item-subtitle">Кол-во</h3>
+                        <span>Шт.</span>
+                      </div>
+                      <div class="col-2 d-none d-lg-block basket__title-item">
+                        <h3 class="basket__title-item-subtitle">Вес</h3>
+                        <span>Кг</span>
+                      </div>
+                      <div class="d-none d-md-block col-auto basket__title-item">
+                        <h3 class="basket__title-item-subtitle">Сумма</h3>
+                        <span>Руб.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="basket__list list-reset">
+                    <li class="basket__item">
+                      <ul class="basket__content-list list-reset">
+                        <li class="basket__content-item">
+                          <a href="product-page.html" class="col-md-5 col-lg-4 basket__content-link">
+                            <div class="basket__content-img">
+                              <img src="images/basket/product.png" alt="Фото товара">
+                            </div>
+                            <span>IRONMAN F-80 (Формула 80) (500 гр) шоколад</span>
+                          </a>
+                          <div class="col-md-7 basket__inner">
+                            <div class="col-8 col-sm-9 col-md-5 col-lg-6 basket__content__inner">
+                              <div class="col-auto col-sm-8 col-md-auto col-lg-6 basket__content__container">
+                                <span class="d-lg-none basket__content__subtitle">Без скидки</span>
+                                <span class="basket__content-numbers">680</span>
+                              </div>
+                              <div class="col-auto col-sm-8 col-md-auto basket__content__container">
+                                <span class="d-lg-none basket__content__subtitle">С учетом скидки</span>
+                                <span class="basket__content-numbers basket__content-numbers--bold">600</span>
+                              </div>
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-5 col-lg-3 basket__content-numbers">
+                              <span class="d-md-none basket__content__subtitle">Кол-во</span>
+                              1
+                            </div>
+                            <span class="col-2 d-none d-lg-block basket__content-numbers">0,5</span>
+                            <div class="col-12 col-md-auto basket__total">
+                              <h3 class="d-md-none basket__title-item-subtitle">Сумма</h3>
+                              <span class="col-auto basket__content-numbers">600</span>
+                            </div>
+                          </div>
                         </li>
-                        <li class="order__text">
-                          <label class="order__label">
-                            <input class="order__input" name="delivery" type="radio" value="pickpoint">
-                            Пикпоинт. Выберите постамат
-                          </label>
+                        <li class="basket__content-item">
+                          <a href="product-page.html" class="col-md-5 col-lg-4 basket__content-link">
+                            <div class="basket__content-img">
+                              <img src="images/basket/product.png" alt="Фото товара">
+                            </div>
+                            <span>IRONMAN F-80 (Формула 80) (500 гр) шоколад</span>
+                          </a>
+                          <div class="col-md-7 basket__inner">
+                            <div class="col-8 col-sm-9 col-md-5 col-lg-6 basket__content__inner">
+                              <div class="col-auto col-sm-8 col-md-auto col-lg-6 basket__content__container">
+                                <span class="d-lg-none basket__content__subtitle">Без скидки</span>
+                                <span class="basket__content-numbers">680</span>
+                              </div>
+                              <div class="col-auto col-sm-8 col-md-auto basket__content__container">
+                                <span class="d-lg-none basket__content__subtitle">С учетом скидки</span>
+                                <span class="basket__content-numbers basket__content-numbers--bold">600</span>
+                              </div>
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-5 col-lg-3 basket__content-numbers">
+                              <span class="d-md-none basket__content__subtitle">Кол-во</span>
+                              1
+                            </div>
+                            <span class="col-2 d-none d-lg-block basket__content-numbers">0,5</span>
+                            <div class="col-12 col-md-auto basket__total">
+                              <h3 class="d-md-none basket__title-item-subtitle">Сумма</h3>
+                              <span class="col-auto basket__content-numbers">600</span>
+                            </div>
+                          </div>
                         </li>
-                      </ul>
-                    </li>
-                    <li class="order__form-item">
-                      <h2 class="order__subtitle">Способ оплаты</h2>
-                      <ul class="order__sublist list-reset">
-                        <li class="order__text">
-                          <label class="order__label">
-                            <input class="order__input" name="payment" type="radio" value="electronic-money">
-                            Яндекс.Касса, электронными деньгами или пластиковой картой Visa, MasterCard, почтовым
-                            переводом,
-                            в платежном терминале и другими способами
-                          </label>
-                        </li>
-                        <li class="order__text">
-                          <label class="order__label">
-                            <input class="order__input" name="payment" type="radio" value="cash">
-                            Наличными курьеру
-                          </label>
+                        <li class="basket__content-item">
+                          <a href="product-page.html" class="col-md-5 col-lg-4 basket__content-link">
+                            <div class="basket__content-img">
+                              <img src="images/basket/product.png" alt="Фото товара">
+                            </div>
+                            <span>IRONMAN F-80 (Формула 80) (500 гр) шоколад</span>
+                          </a>
+                          <div class="col-md-7 basket__inner">
+                            <div class="col-8 col-sm-9 col-md-5 col-lg-6 basket__content__inner">
+                              <div class="col-auto col-sm-8 col-md-auto col-lg-6 basket__content__container">
+                                <span class="d-lg-none basket__content__subtitle">Без скидки</span>
+                                <span class="basket__content-numbers">680</span>
+                              </div>
+                              <div class="col-auto col-sm-8 col-md-auto basket__content__container">
+                                <span class="d-lg-none basket__content__subtitle">С учетом скидки</span>
+                                <span class="basket__content-numbers basket__content-numbers--bold">600</span>
+                              </div>
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-5 col-lg-3 basket__content-numbers">
+                              <span class="d-md-none basket__content__subtitle">Кол-во</span>
+                              1
+                            </div>
+                            <span class="col-2 d-none d-lg-block basket__content-numbers">0,5</span>
+                            <div class="col-12 col-md-auto basket__total">
+                              <h3 class="d-md-none basket__title-item-subtitle">Сумма</h3>
+                              <span class="col-auto basket__content-numbers">600</span>
+                            </div>
+                          </div>
                         </li>
                       </ul>
                     </li>
                   </ul>
-                  <textarea class="order__textarea" name="comment" id="#" cols="30" rows="1"
-                    placeholder="Комментарий к заказу"></textarea>
-                  <button class="order__submit btn-reset button" type="submit">Оформить заказ</button>
-                </form>
+                  <div class="basket__title-list basket__title-list--bottom">
+                    <ul class="col-9 col-md-7 basket__inner list-reset">
+                      <li class="col-3 basket__title-item">
+                        <h3 class="basket__title-item-subtitle">Кол-во</h3>
+                        <span>Шт.</span>
+                      </li>
+                      <li class="col-2 basket__title-item">
+                        <h3 class="basket__title-item-subtitle">Вес</h3>
+                        <span>Кг</span>
+                      </li>
+                      <li class="col-3 col-sm-auto basket__title-item">
+                        <h3 class="basket__title-item-subtitle">Сумма</h3>
+                        <span>Руб.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="basket__list basket__title-list--total">
+                    <h3 class="basket__title-item-subtitle">Итого</h3>
+                    <div class="col-9 col-md-7 basket__inner order__basket-inner">
+                      <span class="col-3 col-sm-4 col-lg-3 basket__total-number">3</span>
+                      <span class="col-2 col-sm-3 col-md-3 col-lg-2 basket__total-number">1,5</span>
+                      <span class="col-3 col-sm-2 col-md-2 col-lg-1 basket__total-number">1800</span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="order__list-sale list-reset">
+                  <li class="order__text">
+                    Скидка от суммы заказа (учтена в цене позиций):
+                    <span>410 руб</span>
+                  </li>
+                  <li class="order__text">
+                    Стоимость доставки:
+                    <span>0 руб</span>
+                  </li>
+                  <li class="order__text">
+                    Ваша скидка:
+                    <span>2060 руб</span>
+                  </li>
+                </ul>
+                <a class="order-archive__add button" href="#">Добавить позиции этого заказа в корзину</a>
               </li>
             </ul>
           </div>

@@ -1035,6 +1035,12 @@
     display: block;
     margin: 0 auto;
   }
+
+  .order-archive__add {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* xs <= Small (sm) */
@@ -1563,6 +1569,10 @@
 
   .order .modal-footer .filter-products__text::before {
     flex-shrink: 0;
+  }
+
+  .order-archive__add {
+    font-size: 4vw;
   }
 
   .form__link-more {
