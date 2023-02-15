@@ -80,7 +80,7 @@
   .order__basket-inner {
     margin-right: 14px;
   }
-  
+
 }
 
 /* lg <= Extra large (xl) */
@@ -1019,7 +1019,8 @@
     margin-top: 30px;
   }
 
-  .recommendation__title {
+  .recommendation__title,
+  .recovery__title {
     font-size: 50px;
   }
 
@@ -1376,7 +1377,8 @@
 
   .where-buy,
   .communication,
-  .order {
+  .order,
+  .recovery {
     padding-top: 10px;
   }
 
@@ -1563,7 +1565,7 @@
   }
 
   .order .modal-footer .filter-products__text,
-  .form__link-more{
+  .form__link-more {
     font-size: 14px;
   }
 
@@ -1577,6 +1579,15 @@
 
   .form__link-more {
     padding-top: 10px;
+  }
+
+  .recovery__title {
+    font-size: 32px;
+  }
+
+  .recovery__button {
+    margin: 0 auto;
+    display: block;
   }
 }
 
