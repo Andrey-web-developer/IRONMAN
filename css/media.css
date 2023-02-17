@@ -264,6 +264,10 @@
   .article__title {
     font-size: 40px;
   }
+
+  .personal-data__title {
+    font-size: 38px;
+  }
 }
 
 /* md <= Large (lg) */
@@ -666,6 +670,10 @@
   .order .recommendation__title {
     font-size: 50px;
   }
+
+  .personal-data .recommendation {
+    margin-top: 30px;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -1042,6 +1050,10 @@
     display: flex;
     justify-content: center;
   }
+
+  .personal-data__title {
+    font-size: 28px;
+  }
 }
 
 /* xs <= Small (sm) */
@@ -1378,7 +1390,8 @@
   .where-buy,
   .communication,
   .order,
-  .recovery {
+  .recovery,
+  .personal-data {
     padding-top: 10px;
   }
 
